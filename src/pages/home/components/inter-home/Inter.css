@@ -1,0 +1,43 @@
+.und-Rect-container {
+  justify-content: flex-start;
+}
+.und-Rect-container > div:nth-child(1) {
+  height: 47vh;
+  width: 40%;
+  border: 1px solid var(--main-color);
+}
+.und-Rect-container > div:nth-child(2) {
+  height: 15vh;
+  justify-content: flex-end;
+  row-gap: 2vh;
+  width: auto;
+}
+.und-Rect-container > div:nth-child(2) h1 {
+  color: var(--main-color);
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+.und-Rect-container > div:nth-child(2) hr {
+  width: 100%;
+  height: 1px;
+  color: var(--main-color);
+}
+/* */
+#se-log-img {
+  position: absolute;
+  top: 520vh;
+  height: 130vh;
+  width: 70%;
+  border-radius: 0vh 0vh 70vw 70vw;
+  background: url('');
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 50vh 50vh var(--background);
+}
+/* */
+.stars-sh {
+  font-size: 130px;
+  border: 1px solid rgb(10, 10, 10);
+}

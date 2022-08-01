@@ -1,0 +1,44 @@
+.welcom {
+  justify-content: flex-start;
+}
+.welcom
+  #center-S:not(#center-S:nth-child(2))
+  .txt-container
+  > div:nth-child(2) {
+  align-self: flex-end;
+}
+.wrapper {
+  height: 285vh;
+  width: 100%;
+  row-gap: 65vh;
+  position: absolute;
+  z-index: -1;
+}
+.bg-wrapper {
+  justify-content: flex-start;
+}
+.bg-wrapper:nth-child(1) {
+  height: 130vh;
+}
+.bg-wrapper:nth-child(2) {
+  height: 115vh;
+  width: 40vw;
+  align-self: flex-start;
+  transform: translateX(10vw);
+}
+
+.bg-wrapper img {
+  height: 100vh;
+  width: 100%;
+  position: sticky;
+  top: 0%;
+}
+.bg-wrapper:nth-child(2) img {
+  height: 85vh;
+}
+.bg-wrapper:nth-child(1) img {
+  opacity: 50%;
+  height: 80vh;
+  width: 70vw;
+  top: 10%;
+}

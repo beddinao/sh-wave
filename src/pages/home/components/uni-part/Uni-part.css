@@ -1,0 +1,39 @@
+.universe-part h1{
+  font-size: 100px;
+  text-align: center;
+  letter-spacing: 1vw;
+}
+.universe-part p{
+  font-family: monospace;
+  font-size: 15px;
+  color:var(--text);
+  text-align: center;
+  width : 20vw;
+  transition-duration: .3s;
+}
+.theUniversalCard{
+  height : 170vh;
+  position: absolute;
+  top: 815vh;
+  width : 35%;
+  border : 1px solid var(--main-color);
+  background : var(--border)
+}
+.theUniversalCard > div{
+  height : 50%;
+  width: 100%;
+  row-gap : 5vh;
+}
+.theUniversalCard button{
+  width : 6vw;
+  height : 3vh;
+  border : none;
+  transition-duration: .3s;
+  border-top : 1px solid var(--main-color);
+  background : var(--background);
+  color : var(--main-color);
+}
+.theUniversalCard button:hover{
+  background : var(--border);
+  cursor:pointer
+}

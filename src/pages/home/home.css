@@ -1,0 +1,51 @@
+/* text */
+.txt-container {
+  align-items: flex-start;
+  height: 80%;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.txt-container > div {
+  width: 50%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.txt-container h1 {
+  font-size: 150px;
+  width: auto;
+  position: absolute;
+}
+#for-Hv,
+.for-st {
+  font-family: serif;
+  font-style: oblique;
+}
+.for-st {
+  color: var(--main-color);
+}
+#for-Hv:hover {
+  background: radial-gradient(
+    circle closest-side at center,
+    var(--main-color) 50%,
+    var(--text) 50%
+  ) ;
+  background-size: 200% 200%;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  transition-duration: 0.1s;
+}
+#for-Hv:active {
+  background-size: 300% 300%;
+}
+.txt-container > div:nth-child(2) {
+  padding: 3vh;
+  height: 40%;
+}
+.txt-container p {
+  width: 70%;
+  font-family: monospace;
+  font-size: 15px;
+  color: var(--text);
+}

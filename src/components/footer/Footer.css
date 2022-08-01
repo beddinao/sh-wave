@@ -1,0 +1,44 @@
+.footer-container {
+  height : 80vh ;
+  scroll-snap-align : center ;
+  border-top : 1px solid var(--border) ;
+}
+.footer-container > div{
+  flex-direction : row ;
+  width : 80% ;
+  justify-content: space-around;
+}
+.footer-container > div > div{
+  width : 50% ;
+}
+.footer-container > div > div:nth-child(1){
+  align-items: flex-start;
+}
+.footer-container > div > div:nth-child(1) h1{
+  font-size: 100px ;
+}
+.footer-container > div > div:nth-child(2){
+  height : 100% ;
+  align-items: flex-end ;
+  flex-direction: column ;
+}
+.footer-container > div > div:nth-child(2) > div{
+  height : 50% ;
+  width : 70% ;
+}
+.footer-container > div > div:nth-child(2) > div:nth-child(1){
+  border : 1px solid var(--main-color)
+}
+.footer-container > div > div:nth-child(2) > div:nth-child(1) h1{
+  transform: translateX(-150%);
+}
+.footer-container > div > div:nth-child(2) > div:nth-child(2){
+  align-items: flex-end ;
+  justify-content: flex-end ;
+}
+#to-up-btn{
+  width : 5vh ;
+  height : 5vh ;
+  border-radius : 50% ;
+  border  : 1px solid var(--txt)
+}

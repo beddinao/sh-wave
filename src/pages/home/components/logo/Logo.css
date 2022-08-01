@@ -1,0 +1,21 @@
+#nav {
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0% 5%;
+  transition-duration: 0.5s;
+}
+#nav .intro h1:nth-child(1) {
+  font-size: 30px;
+  letter-spacing: 10px;
+  transform: translateX(10px);
+}
+#nav .intro h1:nth-child(2) {
+  font-size: 15px;
+  letter-spacing: 7px;
+  transform: translateY(-75%) translateX(7px);
+  color: var(--main-color);
+}

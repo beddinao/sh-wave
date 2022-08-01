@@ -1,0 +1,25 @@
+.matter-txt-container{
+  width :auto;
+  align-items: flex-start;
+  border : 1px solid rgb(10,10,10)
+}
+.matter-txt-container h1:nth-child(1){
+  font-size: 50px;
+}
+.matter-txt-container h1:nth-child(2){
+  font-size: 120px;
+  align-self: center;
+  border : 1px solid rgb(10,10,10)
+}
+.matter-txt-container .matter-per{
+  color : var(--main-color);
+  font-size: 35px;
+}
+.matter-txt-container p{
+  border : 1px solid rgb(10,10,10);
+  font-family: monospace;
+  font-size: 15px;
+  color:var(--text);
+  width : 20vw;
+  align-self: flex-end;
+}

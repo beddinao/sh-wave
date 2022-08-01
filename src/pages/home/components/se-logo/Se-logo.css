@@ -1,0 +1,28 @@
+.se-intro {
+  flex-direction: column;
+  width: auto;
+}
+.se-intro h1 {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--txt);
+  -moz-text-stroke: 1px var(--txt);
+  z-index: 1;
+}
+.se-intro h1:nth-child(1) {
+  font-size: 50px;
+  align-self: flex-start;
+  transform: translateY(50%);
+}
+.se-intro h1:nth-child(2) {
+  -webkit-text-stroke: 1px var(--main-color);
+  -moz-text-stroke: 1px var(--main-color);
+  font-size: 120px;
+  z-index: 4;
+}
+.se-intro h1:nth-child(3) {
+  z-index: 1;
+  font-family: fantasy;
+  font-style: oblique;
+  font-size: 70px;
+  transform: translateY(-75%);
+}

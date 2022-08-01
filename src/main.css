@@ -1,0 +1,81 @@
+:root {
+  --main-color: #006eff;
+  --background: rgb(0, 0, 0);
+  --text: #cccccc;
+  --bg: #111111;
+  --txt: #989898;
+  --border: rgb(10, 10, 10);
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-snap-points-y: repeat(100%);
+  scrollbar-width: 10px;
+  scrollbar-color: var(--bg);
+  transition-duration: 1s;
+}
+body {
+  width: 100%;
+  background: var(--background);
+  color: var(--text);
+  font-family: monospace;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--bg);
+}
+body,
+main,
+div,
+svg,
+nav,
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+div {
+  width: 100%;
+}
+h1 {
+  color: var(--text);
+  font-family: monospace;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+p {
+  font-size: 15px;
+  color: var(--txt);
+  font-family: monospace;
+}
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: var(--text);
+}
+main,
+#body {
+  height: 100%;
+  width: 100%;
+}
+#hold {
+  background: linear-gradient(135deg, var(--background), var(--main-color));
+  height: 100vh;
+  display: none;
+}
+#center-S {
+  scroll-snap-align: center;
+  height: 100vh;
+}
