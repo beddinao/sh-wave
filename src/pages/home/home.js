@@ -32,14 +32,19 @@ export function isVisible(ref) {
 }
 
 export function Home() {
-  const for_viss = useRef();
+  const refs = {
+    for_viss: useRef(),
+    int_h1_ref: useRef(),
+    se_logo_ref: useRef(),
+    fpa_ref: useRef(),
+  };
   return (
     <main>
-      <Nav_logo />
-      <FPa />
+      <Nav_logo aRef={refs} />
+      <FPa aRef={refs.fpa_ref} />
       <Draw_canvas />
-      <Home_welcome aRef={for_viss} />
-      <Inter_home aref={for_viss} />
+      <Home_welcome aRef={refs.for_viss} />
+      <Inter_home aref={refs} />
       <Footer />
     </main>
   );

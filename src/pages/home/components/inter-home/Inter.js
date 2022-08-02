@@ -12,7 +12,7 @@ var txxxt =
 export function Inter_home(props) {
   return (
     <div id="inter-home">
-      <SeLogo />
+      <SeLogo aRef={props.aref.se_logo_ref} />
       <div id="center-S" className="und-Rect-container">
         <div></div>
         <div>
@@ -27,13 +27,13 @@ export function Inter_home(props) {
       <Matter sec_title="and the" title="matter we know" num="" txt="" />
       <div id="center-S">
         <div>
-          <h1 className="stars-sh ssh" ref={props.aref}>
+          <h1 className="stars-sh ssh" ref={props.aref.for_viss}>
             Stars
           </h1>
         </div>
       </div>
       <Gravity_part />
-      <Int_h1 />
+      <Int_h1 aRef={props.aref.int_h1_ref} />
     </div>
   );
 }
