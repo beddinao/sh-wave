@@ -18,6 +18,7 @@
 .menuu {
   position: absolute;
   right: 5%;
+  transition-duration: 0.5s;
 }
 #s_logo h1 {
   font-size: 22px;
@@ -35,15 +36,13 @@
   width: 70%;
 }
 .big_nav {
-  height: 60%;
   padding: 2% 0%;
 }
-.big_nav .menuu {
-  top: 85%;
-}
 .mini_nav {
-  height: 10%;
-  padding: 0;
+  padding: 0%;
+}
+.big_nav .menuu {
+  top: 80%;
 }
 .mini_nav .menuu {
   top: 30%;
