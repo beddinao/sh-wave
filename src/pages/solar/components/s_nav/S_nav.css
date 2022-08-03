@@ -1,0 +1,56 @@
+.center-D {
+  justify-content: flex-start;
+}
+#s_nav {
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+  position: fixed;
+  transition-duration: 0.5s;
+  background: var(--background);
+  z-index: 100;
+}
+#s_logo {
+  height: 100%;
+  width: 30%;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+.menuu {
+  position: absolute;
+  right: 5%;
+}
+#s_logo h1 {
+  font-size: 22px;
+  letter-spacing: 0.5vw;
+  position: absolute;
+  transition-duration: 0.5s;
+}
+#cir {
+  transition-duration: 0.5s;
+}
+.isHid {
+  width: 100%;
+}
+.notHid {
+  width: 70%;
+}
+.big_nav {
+  height: 60%;
+  padding: 2% 0%;
+}
+.big_nav .menuu {
+  top: 85%;
+}
+.mini_nav {
+  height: 10%;
+  padding: 0;
+}
+.mini_nav .menuu {
+  top: 30%;
+}
+.mini_nav #s_logo {
+  transform: scale(0.8);
+}
+.mini_nav #s_logo .isHid {
+  opacity: 0%;
+}
