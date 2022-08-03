@@ -1,23 +1,23 @@
-.svg_con{
-  height : 60vh ;
-  width : 65vh ;
+.svg_con {
+  height: 50vh;
+  width: 65vh;
 }
-svg{
-  height : 100% ;
-  width : 100% ;
+svg {
+  height: 100%;
+  width: 100%;
 }
-.polygon_1{
-  fill : url('#rad_gra') ;
-  stroke : url('#b_gr') ;
-  stroke-width : 2
+.polygon_1 {
+  fill: url('#rad_gra');
+  stroke: url('#b_gr');
+  stroke-width: 2;
 }
-.polygon_2{
-  fill : rgb(1,1,1) ;
-  stroke : url('#b_gr_2') ;
-  stroke-width : 2
+.polygon_2 {
+  fill: rgb(1, 1, 1);
+  stroke: url('#b_gr_2');
+  stroke-width: 2;
 }
-.polygon_3{
-  fill : rgb(1,1,1) ;
-  stroke : url('#b_gr_2') ;
-  stroke-width : 2
+.polygon_3 {
+  fill: rgb(1, 1, 1);
+  stroke: url('#b_gr_2');
+  stroke-width: 2;
 }

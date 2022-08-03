@@ -1,4 +1,4 @@
-import React, { memo, useState, useEffect } from 'react';
+import React, { memo, useEffect } from 'react';
 
 var cH, cW, ctx, $canvas;
 var mColor = '#006eff';

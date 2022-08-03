@@ -156,10 +156,10 @@ function Home_welcome(props) {
       </div>
       <div className="wrapper">
         <div className="bg-wrapper">
-          <img src="/styles/images/new/wp5543325-2.jpg" />
+          <img style={{ width: '70vw' }} src="" />
         </div>
         <div className="bg-wrapper">
-          <img src="/styles/images/chen-liu-2.jpg" />
+          <img style={{ width: '40vw' }} src="" />
         </div>
       </div>
     </div>

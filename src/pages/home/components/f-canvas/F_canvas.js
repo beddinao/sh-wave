@@ -1,4 +1,4 @@
-import React, { useEffect, useState, memo } from 'react';
+import React, { useEffect, memo } from 'react';
 import './F_canvas.css';
 var svg, cW, cH;
 
@@ -29,28 +29,31 @@ function draw_in(wid, hei, ky, con) {
 function Home_canvas() {
   useEffect(() => {
     draw_pol();
-  });
+    return () => {
+      $('polygon').remove();
+    };
+  }, []);
   return (
     <div id="center-S">
-      <div class="svg_con">
+      <div className="svg_con">
         <svg
           id="svg"
-          viewBox="0 0 65vh 60vh"
+          viewBox="0 0 65vh 50vh"
           xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
             <linearGradient id="b_gr_2" gradientTransform="rotate(90)">
-              <stop offset="5%" stop-color="rgb(1,1,1)" />
-              <stop offset="95%" stop-color="#006eff" />
+              <stop offset="5%" stopColor="rgb(1,1,1)" />
+              <stop offset="95%" stopColor="#006eff" />
             </linearGradient>
             <linearGradient id="b_gr" gradientTransform="rotate(90)">
-              <stop offset="10%" stop-color="#006eff" />
-              <stop offset="90%" stop-color="black" />
+              <stop offset="10%" stopColor="#006eff" />
+              <stop offset="90%" stopColor="black" />
             </linearGradient>
             <radialGradient id="rad_gra" fr="40%" cy="130%">
-              <stop offset="10%" stop-color="white" />
-              <stop offset="40%" stop-color="#006eff" />
-              <stop offset="90%" stop-color="black" />
+              <stop offset="10%" stopColor="white" />
+              <stop offset="40%" stopColor="#006eff" />
+              <stop offset="90%" stopColor="black" />
             </radialGradient>
           </defs>
         </svg>

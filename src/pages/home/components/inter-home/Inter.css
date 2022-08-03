@@ -30,6 +30,7 @@
   top: 520vh;
   height: 130vh;
   width: 70%;
+  border : 1px solid var(--txt) ;
   border-radius: 0vh 0vh 70vw 70vw;
   background: url('');
   background-size: cover;
