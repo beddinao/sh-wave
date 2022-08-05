@@ -5,7 +5,7 @@ import { FPa } from './components/f-pa/F-pa';
 import Home_welcome from './components/welcome/Welcom';
 import { Inter_home } from './components/inter-home/Inter';
 import { Footer } from '../../components/footer/Footer';
-import Loading_screen from '../../components/loading/Load';
+import Loading_scene from '../../components/loading/Load';
 import Home_canvas from './components/f-canvas/F_canvas';
 
 export function isElementInViewport(elem) {
@@ -33,24 +33,14 @@ export function isVisible(ref) {
 }
 
 export function Home() {
-  const [is_loading, setIs_loading] = useState(true);
-  useEffect(() => {
-    const loadData = async () => {
-      await new Promise((r) => setTimeout(r, 5000));
-      setIs_loading(false);
-    };
-    loadData();
-  }, []);
   const refs = {
     for_viss: useRef(),
     int_h1_ref: useRef(),
     se_logo_ref: useRef(),
     fpa_ref: useRef(),
   };
-  if (is_loading) {
-    return <Loading_screen />;
-  } else {
-    return (
+  return(
+    <Loading_scene tm={2000} >
       <main>
         <Nav_logo aRef={refs} />
         <FPa aRef={refs.fpa_ref} />
@@ -59,6 +49,6 @@ export function Home() {
         <Inter_home aref={refs} />
         <Footer />
       </main>
-    );
-  }
+  </Loading_scene>
+  )
 }

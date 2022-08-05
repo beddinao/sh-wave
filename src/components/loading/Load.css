@@ -1,9 +1,9 @@
 @keyframes dot_co {
   0% {
-    color: red;
+    color: var(--main-color);
   }
   100% {
-    color: blue;
+    color: var(--text);
   }
 }
 
@@ -23,4 +23,8 @@
 }
 .sp > span:nth-child(2) {
   justify-content: flex-start;
+  color: var(--text);
+}
+.sp > span:nth-child(2) span {
+  animation: dot_co 1s ease-in;
 }
