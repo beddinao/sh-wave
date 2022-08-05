@@ -13,15 +13,15 @@
   flex-direction: row;
 }
 .sp {
-  width: 40vw;
-}
-.sp > span {
-  width: 50%;
+  width: 50vw;
 }
 .sp > span:nth-child(1) {
+  width: 60%;
   justify-content: flex-end;
+  letter-spacing: 1vw;
 }
 .sp > span:nth-child(2) {
+  width: 40%;
   justify-content: flex-start;
   color: var(--text);
 }
