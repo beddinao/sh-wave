@@ -11,20 +11,18 @@
   top: 210vh;
   justify-content: space-between;
   z-index: -1;
-  border: 1px solid var(--bg);
 }
 .bg-wrapper {
   justify-content: flex-start;
-  border: 1px solid var(--txt);
   padding: 0px;
 }
 .bg-wrapper:nth-child(1) {
   height: 120vh;
-  width : 100% ;
+  width: 100%;
 }
 .bg-wrapper:nth-child(2) {
   height: 115vh;
-  width : 50vw ;
+  width: 50vw;
   align-self: flex-start;
   align-items: flex-end;
 }
@@ -32,11 +30,12 @@
   height: 80vh;
   position: sticky;
   top: 0%;
+  border: 1px solid var(--bg);
 }
 .bg-wrapper:nth-child(1) img {
   width: 70%;
   opacity: 50%;
 }
 .bg-wrapper:nth-child(2) img {
-  width : 35vw ;
+  width: 35vw;
 }

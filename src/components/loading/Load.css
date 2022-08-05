@@ -1,0 +1,26 @@
+@keyframes dot_co {
+  0% {
+    color: red;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+.sp,
+.sp span {
+  display: flex;
+  flex-direction: row;
+}
+.sp {
+  width: 40vw;
+}
+.sp > span {
+  width: 50%;
+}
+.sp > span:nth-child(1) {
+  justify-content: flex-end;
+}
+.sp > span:nth-child(2) {
+  justify-content: flex-start;
+}

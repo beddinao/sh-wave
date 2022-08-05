@@ -11,7 +11,7 @@ var txxxt =
 export function MilkyWay() {
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
   return (
     <main>
       <S_nav name="milky way" isHid="isHid" img="" />
@@ -27,7 +27,7 @@ export function MilkyWay() {
 export function SolarSystem() {
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
   return (
     <main>
       <S_nav name="solar system" isHid="notHid" img="" />

@@ -19,7 +19,7 @@ export function Inter_home(props) {
           <hr />
         </div>
       </div>
-      <div id="se-log-img"></div>
+      <img id="se-log-img" src='' ></img>
       <TheUniversalPart />
       <Matter sec_title="more" title="dark energy" num="68" txt={txxxt} />
       <Matter sec_title="than" title="dark matter" num="27" txt={txxxt} />
