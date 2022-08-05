@@ -36,11 +36,7 @@ function Home_canvas() {
   return (
     <div id="center-S">
       <div className="svg_con">
-        <svg
-          id="svg"
-          viewBox="0 0 65vh 50vh"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="b_gr_2" gradientTransform="rotate(90)">
               <stop offset="5%" stopColor="rgb(1,1,1)" />

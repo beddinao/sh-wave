@@ -16,23 +16,27 @@
 .bg-wrapper {
   justify-content: flex-start;
   border: 1px solid var(--txt);
+  padding: 0px;
 }
-
 .bg-wrapper:nth-child(1) {
   height: 120vh;
+  width : 100% ;
 }
 .bg-wrapper:nth-child(2) {
   height: 115vh;
-  align-items: flex-start;
+  width : 50vw ;
+  align-self: flex-start;
+  align-items: flex-end;
 }
-
 .bg-wrapper img {
   height: 80vh;
   position: sticky;
   top: 0%;
-  width: 100%;
-  padding: 0px;
 }
 .bg-wrapper:nth-child(1) img {
+  width: 70%;
   opacity: 50%;
+}
+.bg-wrapper:nth-child(2) img {
+  width : 35vw ;
 }

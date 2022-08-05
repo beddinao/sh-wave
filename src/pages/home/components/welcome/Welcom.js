@@ -156,10 +156,10 @@ function Home_welcome(props) {
       </div>
       <div className="wrapper">
         <div className="bg-wrapper">
-          <img style={{ width: '70vw' }} src="" />
+          <img src="" />
         </div>
         <div className="bg-wrapper">
-          <img style={{ width: '40vw' }} src="" />
+          <img src="" />
         </div>
       </div>
     </div>
