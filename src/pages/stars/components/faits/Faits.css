@@ -1,0 +1,74 @@
+#ScenterS {
+  height : 1100vh ;
+  width : 100% ;
+  align-items: flex-end ;
+}
+#ScenterS > div {
+  height : 100% ;
+  width : 80vw ;
+  align-items: flex-end ;
+}
+#ScenterS > div > div {
+  scroll-snap-align: center ;
+  height : 100vh ;
+  align-items: flex-start ;
+  width : 100% ;
+  grid-gap: 3vh ;
+  padding-left: 2vw ;
+}
+#ScenterS > div > div:nth-child(3),
+#ScenterS > div > div:nth-child(8){
+  width : 72.5vw ;
+}
+#ScenterS > div > div:nth-child(6){
+  width : 65vw ;
+}
+#ScenterS > div > div > div,
+#ScenterS > div > div > p{
+  background : var(--background) ;
+}
+#ScenterS > div > div > div,
+#ScenterS > div > div:nth-child(9) > div > div {
+  padding-left: 3vw ;
+  align-items: flex-start ;
+}
+#ScenterS > div > div > div:nth-child(1),
+#ScenterS > div > div:nth-child(9) > div > div:nth-child(1){
+  height : 45% ;
+  border : 1px solid var(--main-color) ;
+  justify-content: flex-start;
+  padding-top: 3vw;
+  grid-gap: 2vh ;
+}
+#ScenterS > div > div > div:nth-child(2){
+  height : auto ;
+  padding-bottom: 3vh ;
+  flex-direction: row ;
+  flex-wrap: wrap ;
+  border : 1px solid rgb(10,10,10);
+  justify-content: flex-start ;
+}
+#ScenterS > div > div > div:nth-child(2) > div {
+  border : 1px solid rgb(10,10,10);
+  align-items: flex-start ;
+  width : 40% ;
+  grid-gap: 2vh ;
+}
+#ScenterS > div > div:nth-child(9){
+  justify-content: flex-start ;
+  padding-top: 20vh ;
+}
+#ScenterS > div > div:nth-child(9) > div{
+  position: absolute;
+  height : 170vh ;
+  width: 77vw;
+  border: none ;
+  justify-content: space-between ;
+  padding: 0px ;
+}
+#ScenterS > div > div:nth-child(9) > div > div:nth-child(1){
+  height : 50vh ;
+}
+#ScenterS > div > div:nth-child(11){
+  padding : 0px
+}

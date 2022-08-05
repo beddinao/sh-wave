@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef , memo } from 'react';
 import './home.css';
 import { Nav_logo } from './components/logo/Logo';
 import { FPa } from './components/f-pa/F-pa';
@@ -32,7 +32,7 @@ export function isVisible(ref) {
   return isIntersecting;
 }
 
-export function Home() {
+function Home() {
   const refs = {
     for_viss: useRef(),
     int_h1_ref: useRef(),
@@ -52,3 +52,4 @@ export function Home() {
   </Loading_scene>
   )
 }
+export default memo(Home)

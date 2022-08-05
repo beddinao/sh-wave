@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './Inter.css';
 import { SeLogo } from '../se-logo/Se-logo';
 import { TheUniversalPart } from '../uni-part/Uni-part';

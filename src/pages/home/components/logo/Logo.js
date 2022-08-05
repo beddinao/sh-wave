@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Logo.css';
 import { Menu_btn } from '../../../../components/menu_btn/Menu_btn';
-import { isElementInViewport } from '../../home';
 import { isVisible } from '../../home';
 
 export function Home_logo(props) {
@@ -12,10 +11,7 @@ export function Home_logo(props) {
     </div>
   );
 }
-var elem;
-function getE(el) {
-  return (elem = document.querySelector(el));
-}
+
 export function Nav_logo(props) {
   function Is_vi_nav(el, elem, eleme) {
     if (el || elem || eleme) {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, memo } from 'react';
+import React, { useEffect, useRef, memo } from 'react';
 import './Welcom.css';
 import { isVisible } from '../../home';
 import $ from 'jquery';

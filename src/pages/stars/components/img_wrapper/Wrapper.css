@@ -1,0 +1,14 @@
+.img_wrapper{
+  position: absolute ;
+  top : 100vh ;
+  left : 10vw ;
+  height : 160vh ;
+  width : 35vw ;
+  justify-content: flex-start ;
+}
+.img_wrapper div{
+  position : sticky ;
+  top : 0% ;
+  height : 60vh ;
+  border-bottom : 1px solid var(--main-color);
+}

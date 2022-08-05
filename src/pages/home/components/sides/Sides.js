@@ -1,7 +1,6 @@
 import React, { useEffect, memo } from 'react';
 import './Sides.css';
 import { Link } from 'react-router-dom';
-import $ from 'jquery';
 
 function Home_sides(props) {
   useEffect(() => {
