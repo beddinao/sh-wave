@@ -1,6 +1,6 @@
 import React from 'react';
 import './Logo.css';
-import { Menu_btn } from '../../../../components/menu_btn/Menu_btn';
+import { Menu } from '../../../../components/menu_btn/Menu_btn';
 import { isVisible } from '../../home';
 
 export function Home_logo(props) {
@@ -34,7 +34,7 @@ export function Nav_logo(props) {
           <h1>well</h1>
         </Home_logo>
       </div>
-      <Menu_btn class="menu-btn" />
+      <Menu class="menu-btn" />
     </nav>
   );
 }

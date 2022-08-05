@@ -70,11 +70,6 @@ main,
   height: 100%;
   width: 100%;
 }
-#hold {
-  background: linear-gradient(135deg, var(--background), var(--main-color));
-  height: 100vh;
-  display: none;
-}
 #center-S {
   scroll-snap-align: center;
   height: 100vh;

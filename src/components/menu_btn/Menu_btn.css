@@ -1,3 +1,4 @@
+.menu_bttn ,
 .menu-btn,
 .menuu {
   border: 1px solid var(--txt);
@@ -7,6 +8,7 @@
   padding: 4px;
   transition-duration: 0.3s;
 }
+.menu_bttn:hover ,
 .menu-btn:hover,
 .menuu:hover {
   cursor: pointer;

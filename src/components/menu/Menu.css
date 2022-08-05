@@ -1,0 +1,9 @@
+.menu_conta{
+  position: absolute ;
+  left : 0% ;
+  top : 0% ;
+  height : 100vh ;
+  width : 100% ;
+  border : 1px solid var(--main-color) ;
+  background: var(--background);
+}

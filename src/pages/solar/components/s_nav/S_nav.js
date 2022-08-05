@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './S_nav.css';
-import { Menu_btn } from '../../../../components/menu_btn/Menu_btn';
+import { Menu } from '../../../../components/menu_btn/Menu_btn';
 
 export function S_nav(props) {
   const [is_hidden, setIs_hidden] = useState(false);
@@ -19,7 +19,7 @@ export function S_nav(props) {
           <img id="cir" src={props.img} className={props.isHid} />
           <h1>{props.name}</h1>
         </div>
-        <Menu_btn class="menuu" />
+        <Menu class="menuu" />
       </nav>
     </div>
   );
