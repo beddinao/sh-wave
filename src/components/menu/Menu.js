@@ -1,6 +1,7 @@
 import React , {memo , useEffect} from 'react' ;
 import './Menu.css' ;
 import {Menu_btn} from '../menu_btn/Menu_btn' ;
+import { Link } from 'react-router-dom' ;
 
 function Menu_conte(props){
   useEffect(()=>{
@@ -11,8 +12,21 @@ function Menu_conte(props){
   },[])
   return (
     <div className='menu_conta' >
-      <Menu_btn click={props.click} class='menu_bttn' />
-      <h1>Menu___</h1>
+      <div>
+        <Menu_btn click={props.click} class='menu_bttn' />
+      </div>
+      <div>
+        <div>
+          <Link to='/'><h1 >home</h1></Link>
+          <Link to='/solar-system'><h1 >Solar System</h1></Link>
+          <Link to='/milky-way'><h1 >milky way</h1></Link>
+          <Link to='/stars'><h1 >stars</h1></Link>
+        </div>
+        <div>
+          <div></div>
+          <h2>Hover over Title to display Links</h2>
+        </div>
+      </div>
     </div>
   )
 }

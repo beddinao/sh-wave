@@ -1,6 +1,7 @@
 .menu_bttn ,
 .menu-btn,
-.menuu {
+.menuu ,
+.menuu-btn{
   border: 1px solid var(--txt);
   height: 30px;
   width: 30px;
@@ -10,7 +11,8 @@
 }
 .menu_bttn:hover ,
 .menu-btn:hover,
-.menuu:hover {
+.menuu:hover ,
+.menuu-btn:hover {
   cursor: pointer;
   background: var(--border);
 }

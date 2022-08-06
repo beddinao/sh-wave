@@ -1,9 +1,68 @@
-.menu_conta{
-  position: absolute ;
-  left : 0% ;
-  top : 0% ;
-  height : 100vh ;
-  width : 100% ;
-  border : 1px solid var(--main-color) ;
+@keyframes in_ou {
+  0% {
+    top: -100vh;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+.menu_conta {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 100vh;
+  width: 100%;
   background: var(--background);
+  justify-content: flex-start;
+  transition-duration: 0.3s;
+  animation: in_ou 0.3s linear alternate;
+}
+.menu_conta > div {
+  width: 90%;
+}
+.menu_conta > div:nth-child(1) {
+  height: 10vh;
+  align-items: flex-end;
+}
+.menu_conta > div:nth-child(2) {
+  height: 90vh;
+  flex-direction: row;
+}
+.menu_conta > div:nth-child(2),
+.menu_conta > div:nth-child(2) > div:nth-child(1),
+.menu_conta > div:nth-child(2) > div:nth-child(2) {
+  align-items: flex-start;
+}
+.menu_conta > div:nth-child(2) > div {
+  width: 50%;
+  height: 90%;
+}
+.menu_conta > div:nth-child(2) > div:nth-child(1) {
+  justify-content: space-around;
+}
+.menu_conta > div:nth-child(2) > div:nth-child(1) h1 {
+  font-size: 70px;
+  transition-duration: 0.3s;
+}
+.menu_conta > div:nth-child(2) > div:nth-child(1) h1:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--text);
+}
+.menu_conta > div:nth-child(2) > div:nth-child(2) {
+  justify-content: flex-start;
+  padding-left: 10%;
+  padding-top: 5vh;
+  grid-gap: 2vh;
+}
+.menu_conta > div:nth-child(2) > div:nth-child(2) div {
+  height: 40%;
+  width: 80%;
+  border: 1px solid var(--border);
+}
+.menu_conta > div:nth-child(2) > div:nth-child(2) h2 {
+  font-size: 15px;
+  font-weight: 100;
+  color: var(--txt);
+  width: 80%;
 }
