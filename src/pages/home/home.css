@@ -12,9 +12,8 @@
   align-items: flex-start;
 }
 .txt-container h1 {
-  font-size: 150px;
+  font-size: 10vw;
   width: auto;
-  position: absolute;
 }
 #for-Hv,
 .for-st {
@@ -24,20 +23,25 @@
 .for-st {
   color: var(--main-color);
 }
-#for-Hv:hover {
-  background: radial-gradient(
-    circle closest-side at center,
-    var(--main-color) 50%,
-    var(--text) 50%
-  ) ;
-  background-size: 200% 200%;
-  background-clip: text;
-  color: transparent;
-  cursor: pointer;
-  transition-duration: 0.1s;
-}
-#for-Hv:active {
-  background-size: 300% 300%;
+@media only screen and (min-width : 900px){
+  .txt-container h1{
+    position: absolute;
+  }
+  #for-Hv:hover {
+    background: radial-gradient(
+      circle closest-side at center,
+      var(--main-color) 50%,
+      var(--text) 50%
+    );
+    background-size: 200% 200%;
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+    transition-duration: 0.1s;
+  }
+  #for-Hv:active {
+    background-size: 300% 300%;
+  }
 }
 .txt-container > div:nth-child(2) {
   padding: 3vh;
@@ -48,4 +52,22 @@
   font-family: monospace;
   font-size: 15px;
   color: var(--text);
+}
+@media only screen and (max-width: 900px) {
+  #inter-home,
+  .side,
+  .menu-btn{
+    display : none ;
+  }
+  .txt-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .txt-container > div{
+    width : 100% ;
+  }
+  #nav{
+    background : var(--background) ;
+    justify-content: center;
+  }
 }
