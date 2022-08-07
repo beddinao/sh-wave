@@ -5,6 +5,7 @@
   height : 160vh ;
   width : 35vw ;
   justify-content: flex-start ;
+  z-index: -1;
 }
 .img_wrapper div{
   position : sticky ;
