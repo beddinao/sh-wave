@@ -156,7 +156,7 @@ function Home_welcome(props) {
       </div>
       <div className="wrapper">
         <div className="bg-wrapper">
-          <img src="" />
+          <img src="./img/g_1.jpeg" />
         </div>
         <div className="bg-wrapper">
           <img src="" />
