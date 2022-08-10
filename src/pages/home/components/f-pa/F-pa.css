@@ -3,9 +3,8 @@
   width: auto;
 }
 .f-Pa {
-  background-image: url('./img/wp5543325-2.jpg');
-  background-size: 90% 90%;
-  background-repeat: no-repeat;
+  background-image: url('./img/wp5543325-4.jpg');
+  background-size:cover;
   background-position: center;
 }
 .f-Pa h1:nth-child(1) {
