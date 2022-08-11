@@ -2,10 +2,9 @@
 .logo {
   width: auto;
 }
-.f-Pa {
-  overflow: hidden;
-}
 .f-Pa #cont {
+  display : unset ;
+  overflow: hidden;
   position: absolute;
   height: 100vh;
   width: 100%;
