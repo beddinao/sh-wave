@@ -3,10 +3,21 @@
   width: auto;
 }
 .f-Pa {
-  background-image: url('./img/fpw_2.jpg');
-  background-size: cover;
-  background-position: center;
+  overflow : hidden ;
 }
+.f-Pa .intro {
+  position : absolute ;
+}
+#cursor{
+  position : absolute ;
+  height : 400px ;
+  width : 400px ;
+  border-radius : 50% ;
+  -webkit-backdrop-filter: brightness(10000%);
+  -moz-backdrop-filter: brightness(10000%);
+  backdrop-filter: brightness(10000%);
+}
+
 .f-Pa h1:nth-child(1) {
   font-size: 80px;
   font-family: serif;
