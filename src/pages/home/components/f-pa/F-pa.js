@@ -9,7 +9,7 @@ const rando_m = (min,max) =>{
 }
 
 function draw_stars(){
-  container = document.querySelector('.f-pa') ;
+  container = document.getElementById('cont') ;
   cursor = document.getElementById('cursor') ;
   wid = parseFloat(getComputedStyle(container).width) ;
   hei = parseFloat(getComputedStyle(container).height) ;
@@ -58,11 +58,12 @@ function FPa(props) {
     }
   },[])
   return (
-    <div id="center-S" onMouseMove={handle_move} className="f-Pa">
+    <div id="center-S" className="f-Pa">
       <Home_logo>
         <h1 ref={props.aRef}>Hello</h1>
       </Home_logo>
       <div id='cursor' ></div>
+      <div id='cont' onMouseMove={handle_move}></div>
     </div>
   );
 }

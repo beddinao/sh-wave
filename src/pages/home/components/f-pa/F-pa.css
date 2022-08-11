@@ -3,16 +3,19 @@
   width: auto;
 }
 .f-Pa {
-  overflow : hidden ;
+  overflow: hidden;
 }
-.f-Pa .intro {
-  position : absolute ;
+.f-Pa #cont {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
 }
-#cursor{
-  position : absolute ;
-  height : 400px ;
-  width : 400px ;
-  border-radius : 50% ;
+#cursor {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
   -webkit-backdrop-filter: brightness(10000%);
   -moz-backdrop-filter: brightness(10000%);
   backdrop-filter: brightness(10000%);
