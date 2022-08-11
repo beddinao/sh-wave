@@ -1,23 +1,27 @@
-import React , {useEffect , memo} from 'react';
+import React , {useEffect , memo , useRef} from 'react';
 import './F-pa.css';
 import { Home_logo } from '../logo/Logo';
+import { isVisible } from '../../home' ;
 
 var container , cursor , wid , hei , m_size ;
 
 const rando_m = (min,max) =>{
   return min + Math.random() * ( max - min )
 }
-
+function handle_move(e){
+  cursor.style.left = (e.pageX - 200) + 'px' ;
+  cursor.style.top = (e.pageY - 200) + 'px' ;
+}
 function draw_stars(){
   container = document.getElementById('cont') ;
   cursor = document.getElementById('cursor') ;
   wid = parseFloat(getComputedStyle(container).width) ;
   hei = parseFloat(getComputedStyle(container).height) ;
 
-  draw_in()
+  draw_in() ;
 }
 function draw_in(){
-  m_size = (wid * hei) / 4000 ;
+  m_size = (wid * hei) / 7000 ;
   for (let i = 0 ; i < m_size ; i++){
     let star = document.createElement('div');
     
@@ -31,10 +35,10 @@ function draw_in(){
     
     star.animate(
       [
-        {backgroundColor : `rgba(255,255,255,${rando_m(.5,.8)}`} ,
-        {backgroundColor : `rgba(255,255,255,${rando_m(.0,.3)}}`}
+        {backgroundColor : `rgba(255,255,255,${rando_m(.6,.8)})`} ,
+        {backgroundColor : `rgba(255,255,255,${rando_m(.0,.2)})`}
       ],{
-        duration : rando_m(2000,7000) ,
+        duration : rando_m(2000,8000) ,
         easing : 'linear' ,
         iterations : Infinity , 
         direction : 'alternate'
@@ -42,28 +46,27 @@ function draw_in(){
     
     container.appendChild(star) ;
   }
+  document.body.addEventListener('mousemove',handle_move)
 }
-
+function undraw_stars(){
+  $('.a_star').remove() ;
+  document.body.removeEventListener('mousemove',handle_move) ;
+}
 function FPa(props) {
-  var handle_move = (e) =>{
-    cursor.style.left = (e.pageX - 200) + 'px' ;
-    cursor.style.top = (e.pageY - 200) + 'px' ;
-  }
-
   useEffect(()=>{
-    draw_stars()
+    //
     return () => {
-      handle_move = null ;
-      $('.a_star').remove() ;
+      undraw_stars()   
     }
   },[])
   return (
     <div id="center-S" className="f-Pa">
-      <Home_logo>
+      <Home_logo >
         <h1 ref={props.aRef}>Hello</h1>
       </Home_logo>
+      {isVisible(props.aRef) ? draw_stars() : undraw_stars() }
       <div id='cursor' ></div>
-      <div id='cont' onMouseMove={handle_move}></div>
+      <div id='cont'></div>
     </div>
   );
 }

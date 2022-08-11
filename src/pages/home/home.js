@@ -40,7 +40,7 @@ function Home() {
     fpa_ref: useRef(),
   };
   return(
-    <Loading_scene tm={4000} >
+    <Loading_scene tm={500} >
       <main>
         <Nav_logo aRef={refs} />
         <FPa aRef={refs.fpa_ref} />
