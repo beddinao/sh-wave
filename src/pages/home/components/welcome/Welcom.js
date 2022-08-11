@@ -49,7 +49,7 @@ function Home_welcome(props) {
     to_sty(b_nom, 300 - b_nom);
   };
   const handle_out = () => {
-    to_sty(-200, -200);
+    to_sty(-200, -200)
   };
   const handle_click = (e) => {
     let x_bg_pos = parseFloat(
