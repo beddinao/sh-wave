@@ -69,10 +69,8 @@ function Home_welcome(props) {
         ? (s_link = '/solar-system')
         : props.ele
         ? (s_link = '/milky-way')
-        : () => {
-          s_link = '/stars' ;
-          $(tar.get_3).css(sty.le_2, sty.val_2);
-        }
+        : s_link = '/stars' ; $(tar.get_3).css(sty.le_2, sty.val_2);
+        
       return <Home_sides s_link={s_link} />;
     } else {
       return <div />;
