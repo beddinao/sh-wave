@@ -11,7 +11,7 @@ var a_nom, b_nom, a_width, s_link;
 const tar = {
   get_1: '.side:nth-child(1) > div',
   get_2: '.side:nth-child(2) > div',
-  get_3: '.side a',
+  get_3 : '.side a' 
 };
 const sty = {
   le_1: 'background-position',
@@ -49,7 +49,6 @@ function Home_welcome(props) {
     to_sty(b_nom, 300 - b_nom);
   };
   const handle_out = () => {
-    $(tar.get_3).css(sty.le_2, sty.val_2);
     to_sty(-200, -200);
   };
   const handle_click = (e) => {
@@ -70,7 +69,10 @@ function Home_welcome(props) {
         ? (s_link = '/solar-system')
         : props.ele
         ? (s_link = '/milky-way')
-        : (s_link = '/stars');
+        : () => {
+          s_link = '/stars' ;
+          $(tar.get_3).css(sty.le_2, sty.val_2);
+        }
       return <Home_sides s_link={s_link} />;
     } else {
       return <div />;
