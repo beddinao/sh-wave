@@ -5,7 +5,7 @@ import { TheUniversalPart } from '../uni-part/Uni-part';
 import { Matter } from '../matter/Matter';
 import { Gravity_part } from '../gravity/Gravity';
 import { Int_h1 } from '../int-h1/Int';
-//import inw from './img/inw_2.jpg' ;
+import inw from './img/inw.jpg' ;
 
 var txxxt =
   'consectetur adipisicing elit, sed doi eiusmod tempor incididunt ut labore et dolore magna fef fe  Ut enim ad minim veniam.';
@@ -21,7 +21,7 @@ export function Inter_home(props) {
           <hr />
         </div>
       </div>
-      <img id="se-log-img" src=''></img>
+      <img id="se-log-img" src={inw}></img>
       <TheUniversalPart />
       <Matter sec_title="more" title="dark energy" num="68" txt={txxxt} />
       <Matter sec_title="than" title="dark matter" num="27" txt={txxxt} />
