@@ -70,7 +70,7 @@ function Home_welcome(props) {
         ? (s_link = '/milky-way')
         : s_link = '/stars' ;
         
-      return <Home_sides s_link={s_link} aRe={props.aRef} />;
+      return <Home_sides s_link={s_link} />;
     } else {
       return <div />;
     }
@@ -87,6 +87,7 @@ function Home_welcome(props) {
           elem={isVisible(props.aRef)}
         />
       }
+      {isVisible(props.aRef) ? $('.side a').css('color','var(--main-color)') : $('.side a').css('color','var(--background)')}
       <div id="center-S">
         <div className="txt-container">
           <div>
