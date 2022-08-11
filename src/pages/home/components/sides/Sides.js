@@ -1,6 +1,7 @@
 import React, { useEffect, memo } from 'react';
 import './Sides.css';
 import { Link } from 'react-router-dom';
+import { isVisible } from '../../home';
 
 function Home_sides(props) {
   useEffect(() => {
@@ -23,7 +24,7 @@ function Home_sides(props) {
         <div className="side-container">
           <div>
             <h1>
-              <Link to={props.s_link} id="right-link">
+              <Link to={props.s_link} id="right-link" style={{color : isVisible(props.aRe) ? 'var(--main-color)' : 'var(--background)'}} >
                 More in here
               </Link>
             </h1>

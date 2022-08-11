@@ -17,7 +17,6 @@ const sty = {
   le_1: 'background-position',
   le_2: 'color',
   val_1: 'var(--background)',
-  val_2: 'var(--main-color)',
 };
 const txt_1 = (
   <p>
@@ -69,9 +68,9 @@ function Home_welcome(props) {
         ? (s_link = '/solar-system')
         : props.ele
         ? (s_link = '/milky-way')
-        : s_link = '/stars' ; $(tar.get_3).css(sty.le_2, sty.val_2);
+        : s_link = '/stars' ;
         
-      return <Home_sides s_link={s_link} />;
+      return <Home_sides s_link={s_link} aRe={props.aRef} />;
     } else {
       return <div />;
     }
