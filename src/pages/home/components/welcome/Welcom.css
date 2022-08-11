@@ -30,7 +30,6 @@
   height: 80vh;
   position: sticky;
   top: 0%;
-  border: 1px solid var(--bg);
 }
 .bg-wrapper:nth-child(1) img {
   width: 70%;

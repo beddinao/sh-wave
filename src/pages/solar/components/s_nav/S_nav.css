@@ -25,6 +25,7 @@
   letter-spacing: 0.5vw;
   position: absolute;
   transition-duration: 0.5s;
+  z-index: -1;
 }
 #cir {
   transition-duration: 0.5s;
