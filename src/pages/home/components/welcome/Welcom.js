@@ -62,15 +62,22 @@ function Home_welcome(props) {
     }
     document.getElementById(`${which}-link`).click();
   };
+  var co = 'var(--background)';
   function Is_s_v(props) {
     if (props.el || props.ele || props.elem) {
-      props.el
-        ? (s_link = '/solar-system')
-        : props.ele
-        ? (s_link = '/milky-way')
-        : s_link = '/stars' ;
+      if(props.el){
+        (s_link = '/solar-system')
+      }else{
+        if (props.ele){
+          (s_link = '/milky-way')
+        }
+        else{
+          s_link = '/stars' ; 
+          co = 'var(--main-color)'
+        }
+      }
         
-      return <Home_sides s_link={s_link} />;
+      return <Home_sides s_link={s_link} co={co} />;
     } else {
       return <div />;
     }
@@ -87,7 +94,6 @@ function Home_welcome(props) {
           elem={isVisible(props.aRef)}
         />
       }
-      {isVisible(props.aRef) ? $('.side a').css('color','var(--main-color)') : $('.side a').css('color','var(--background)')}
       <div id="center-S">
         <div className="txt-container">
           <div>

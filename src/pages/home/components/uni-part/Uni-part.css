@@ -1,39 +1,41 @@
-.universe-part h1{
+.universe-part h1 {
   font-size: 100px;
   text-align: center;
   letter-spacing: 1vw;
 }
-.universe-part p{
+.universe-part p {
   font-family: monospace;
   font-size: 15px;
-  color:var(--text);
+  color: var(--text);
   text-align: center;
-  width : 20vw;
-  transition-duration: .3s;
+  width: 20vw;
+  transition-duration: 0.3s;
 }
-.theUniversalCard{
-  height : 170vh;
+.theUniversalCard {
+  height: 170vh;
   position: absolute;
   top: 815vh;
-  width : 35%;
-  border : 1px solid var(--main-color);
-  background : var(--border)
+  width: 35%;
+  background: url('./img/deep_universe.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.theUniversalCard > div{
-  height : 50%;
+.theUniversalCard > div {
+  height: 50%;
   width: 100%;
-  row-gap : 5vh;
+  row-gap: 5vh;
 }
-.theUniversalCard button{
-  width : 6vw;
-  height : 3vh;
-  border : none;
-  transition-duration: .3s;
-  border-top : 1px solid var(--main-color);
-  background : var(--background);
-  color : var(--main-color);
+.theUniversalCard button {
+  width: 6vw;
+  height: 3vh;
+  border: none;
+  transition-duration: 0.3s;
+  border-top: 1px solid var(--main-color);
+  background: var(--background);
+  color: var(--main-color);
 }
-.theUniversalCard button:hover{
-  background : var(--border);
-  cursor:pointer
+.theUniversalCard button:hover {
+  background: var(--border);
+  cursor: pointer;
 }
