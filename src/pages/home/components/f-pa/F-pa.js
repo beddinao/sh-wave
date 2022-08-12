@@ -25,7 +25,7 @@ function draw_in(){
   for (let i = 0 ; i < m_size ; i++){
     let star = document.createElement('div');
     
-    let o_size = rando_m(1 , 2) ;
+    let o_size = rando_m(1 , 4) ;
     star.style.position = 'relative' ;
     star.style.top = rando_m(0 , 100 - ( m_size / 6 )) + "%" ;
     star.style.left = rando_m(0 , 100) + "%" ;
