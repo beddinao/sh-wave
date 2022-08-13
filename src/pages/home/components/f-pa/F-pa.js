@@ -20,7 +20,7 @@ function draw_stars() {
   draw_in();
 }
 function draw_in() {
-  m_size = (wid * hei) / 20000;
+  m_size = (wid * hei) / 7000;
   for (let i = 0; i < m_size; i++) {
     let star = document.createElement('div');
     let o_size = rando_m(1, 4);

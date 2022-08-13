@@ -13,8 +13,8 @@
 .f-Pa #cont {
   display: unset;
   position: sticky;
-  top: 0%;
-  height: 90vh;
+  top: 50%;
+  height: 80vh;
   width: 90%;
   z-index: -1;
 }
