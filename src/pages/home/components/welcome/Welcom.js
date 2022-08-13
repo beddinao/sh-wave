@@ -4,10 +4,10 @@ import { isVisible } from '../../home';
 import $ from 'jquery';
 import Home_sides from '../sides/Sides';
 import Solar_h1 from '../so_h1/So_h1';
-import w_1 from './img/wp_1.jpg' ;
-import w_2 from './img/wp_2.jpeg' ;
+//import w_1 from './img/wp_1.jpg' ;
+//import w_2 from './img/wp_2.jpeg' ;
 
-var a_nom, b_nom, a_width, s_link;
+var a_nom, b_nom, a_width ,whi;
 const tar = {
   get_1: '.side:nth-child(1) > div',
   get_2: '.side:nth-child(2) > div',
@@ -62,22 +62,10 @@ function Home_welcome(props) {
     }
     document.getElementById(`${which}-link`).click();
   };
-  var co = 'var(--background)';
   function Is_s_v(props) {
     if (props.el || props.ele || props.elem) {
-      if(props.el){
-        (s_link = '/solar-system')
-      }else{
-        if (props.ele){
-          (s_link = '/milky-way')
-        }
-        else{
-          s_link = '/stars' ; 
-          co = 'var(--main-color)'
-        }
-      }
-        
-      return <Home_sides s_link={s_link} co={co} />;
+      props.el ? whi = 0 : props.ele ? whi = 1 : whi = 2 ;
+      return <Home_sides whi={whi} />;
     } else {
       return <div />;
     }
@@ -164,10 +152,10 @@ function Home_welcome(props) {
       </div>
       <div className="wrapper">
         <div className="bg-wrapper">
-          <img src={w_1} />
+          <img src='{w_1}' />
         </div>
         <div className="bg-wrapper">
-          <img src={w_2} />
+          <img src='{w_2}' />
         </div>
       </div>
     </div>

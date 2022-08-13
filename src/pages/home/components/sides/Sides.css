@@ -34,6 +34,7 @@
   width: 20vw;
   height: 3vh;
   font-size: 15px;
+  
 }
 .side:nth-child(2) h1 {
   transform: rotate(90deg);
@@ -46,5 +47,5 @@
   height: 100%;
   width: 100%;
   transition-duration: 0.3s;
-  color: var(--background);
+  color: inherit;
 }
