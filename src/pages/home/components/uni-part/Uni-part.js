@@ -1,17 +1,8 @@
-import React from 'react';
+import React , {useState} from 'react';
 import './Uni-part.css';
 
+
 function TheUniversalCard() {
-  let num = true ;
-  const handle_click = (e) =>{
-    if(num){
-      $('#uni-text').appendTo(e.currentTarget) ;
-      num = false
-    }else{
-      $('#uni-text').insertBefore(e.currentTarget) ;
-      num = true ;
-    }
-  }
   return (
     <div className="theUniversalCard">
       <div>
@@ -23,10 +14,8 @@ function TheUniversalCard() {
       </div>
       <div>
         <p id="uni-text">
-          consectetur adipisicing elit, sed doi eiusmod tempor incididunt ut
-          dolore magna..
+        consectetur adipisicing elit, sed doi eiusmod tempor incididunt dolore magna const txt_1  = consectetur adipisicing elit, sed doi eiusmod tempor incididunt dolore magna..  incididunt dolore magna const txt_1  = consectetur 
         </p>
-        <div id="uni-btn" onClick={handle_click} >Show More</div>
       </div>
     </div>
   );
