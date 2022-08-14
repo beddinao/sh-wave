@@ -9,6 +9,7 @@
   color: var(--text);
   text-align: center;
   width: 20vw;
+  border: 1px solid var(--border);
   transition-duration: 0.3s;
 }
 .theUniversalCard {
@@ -27,16 +28,16 @@
   width: 100%;
   row-gap: 5vh;
 }
-.theUniversalCard button {
-  width: 6vw;
-  height: 3vh;
-  border: none;
+.theUniversalCard #uni-btn {
+  width: fit-content;
+  height: fit-content;
+  padding : 1rem ;
   transition-duration: 0.3s;
-  border-top: 1px solid var(--main-color);
+  border: 1px solid var(--main-color);
   background: var(--background);
   color: var(--main-color);
 }
-.theUniversalCard button:hover {
+.theUniversalCard #uni-btn:hover {
   background: var(--border);
   cursor: pointer;
 }

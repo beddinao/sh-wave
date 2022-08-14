@@ -1,9 +1,12 @@
 .gravity-card{
   height : 100vh ;
   width : 35%;
-  border : 1px solid var(--main-color);
+  border-bottom : 1px solid var(--main-color);
   transform: translateY(-10vh);
   justify-content: flex-end ;
+  background-size: cover;
+  background-position : center ;
+  background-repeat : no-repeat ;
 }
 .gravity-card > div{
   position: absolute;
