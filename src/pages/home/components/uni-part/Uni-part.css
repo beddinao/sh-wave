@@ -9,7 +9,6 @@
   color: var(--text);
   text-align: center;
   width: 20vw;
-  border: 1px solid var(--border);
   transition-duration: 0.3s;
 }
 .theUniversalCard {
@@ -26,7 +25,6 @@
 .theUniversalCard > div {
   height: 50%;
   width: 100%;
-  border : 1px solid var(--border) ;
 }
 #uni-text{
   width : 80% ;
