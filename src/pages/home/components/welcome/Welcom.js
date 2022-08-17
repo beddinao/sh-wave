@@ -4,8 +4,8 @@ import { isVisible } from '../../home';
 import $ from 'jquery';
 import Home_sides from '../sides/Sides';
 import Solar_h1 from '../so_h1/So_h1';
-import w_1 from './img/wp_1.jpg' ;
-import w_2 from './img/wp_3.jpg' ;
+import w_1 from './img/wp_3.jpg' ;
+import w_2 from './img/wp_1.jpg' ;
 
 var a_nom, b_nom, a_width ,whi;
 const tar = {
