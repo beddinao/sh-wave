@@ -5,6 +5,7 @@
   height: 47vh;
   width: 40%;
   border: 1px solid var(--main-color);
+  z-index : -2 ;
 }
 .und-Rect-container > div:nth-child(2) {
   height: 15vh;
@@ -25,14 +26,23 @@
   color: var(--main-color);
 }
 /* */
-#se-log-img {
-  min-height: 130vh;
-  width: 70%;
+#stars_cont {
+  display : unset ;
+  overflow : hidden ;
+  height: 140vh;
+  width: 80%;
   position: absolute;
-  top: 520vh;
+  top: 510vh;
   border-radius: 0vh 0vh 70vw 70vw;
-  /*box-shadow: inset 0 50vh 50vh var(--background);*/
+  z-index : -1 ;
+  background : var(--background) ;
 }
+.a_star{
+  position : relative ;
+  transition-duration : .5s ;
+  border-radius : 50% ;
+}
+/* */
 /* */
 .stars-sh {
   font-size: 130px;

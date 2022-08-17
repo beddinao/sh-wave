@@ -2,38 +2,11 @@
 .logo {
   width: auto;
 }
-.f-Pa,
-.f-Pa #cont {
-  overflow: hidden;
-}
 .f-Pa .intro {
   position: absolute;
 }
 /**/
-.f-Pa #cont {
-  display: unset;
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: sticky;
-  top: 0%;
-  height: 80vh;
-  width: 90%;
-  z-index: -1;
-}
-.a_star {
-  position: relative;
-  transition-duration: .5s;
-  border-radius: 50%;
-}
-#cursor {
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  -webkit-backdrop-filter: brightness(500%);
-  -moz-backdrop-filter: brightness(500%);
-  backdrop-filter: brightness(500%);
-}
+
 /* */
 .f-Pa h1:nth-child(1) {
   font-size: 80px;

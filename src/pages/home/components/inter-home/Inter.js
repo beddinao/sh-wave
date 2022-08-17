@@ -1,16 +1,64 @@
-import React from 'react';
+import React , { useEffect , memo } from 'react';
 import './Inter.css';
 import { SeLogo } from '../se-logo/Se-logo';
 import { TheUniversalPart } from '../uni-part/Uni-part';
 import { Matter } from '../matter/Matter';
 import { Gravity_part } from '../gravity/Gravity';
 import { Int_h1 } from '../int-h1/Int';
-import inw from './img/inw_2.jpg';
 
 var txxxt =
   'consectetur adipisicing elit, sed doi eiusmod tempor incididunt ut labore et dolore magna fef fe  Ut enim ad minim veniam.';
+var container , wid , hei , m_size ;
 
-export function Inter_home(props) {
+const rando_m = (min , max) => {
+  return min + Math.random() * ( max - min )
+}
+
+function draw_stars() {
+  container = document.getElementById('stars_cont');
+  wid = parseFloat(getComputedStyle(container).width);
+  hei = parseFloat(getComputedStyle(container).height);
+
+  draw_in();
+}
+function draw_in() {
+  m_size = (wid * hei) / 8000;
+  for (let i = 0; i < m_size; i++) {
+    let star = document.createElement('div');
+    let o_size = rando_m(1, 4);
+    let o_co = `rgba(255,255,255,${rando_m(.01,.8)})` ;
+
+    star.style.top = rando_m(0, 100 - m_size / 6) + '%';
+    star.style.left = rando_m(0, 100) + '%';
+    star.style.width = o_size + 'px';
+    star.style.height = o_size + 'px';
+    star.style.backgroundColor = o_co ;
+    star.style.boxShadow = `0 0 ${o_size + 5}px `+ o_co ;
+    star.classList.add('a_star');
+    star.animate(
+      [
+        { opacity : 0.5  } ,
+        { opacity : 1  }
+      ],{
+        duration : rando_m(1000,5000) ,
+        easing : 'linear' ,
+        iterations : Infinity , 
+        direction : 'alternate'
+      })
+    container.appendChild(star);
+  }
+}
+
+function undraw_stars() {
+  $('.a_star').remove();
+}
+function Inter_home(props) {
+  useEffect(()=>{
+    draw_stars()
+    return () =>{
+      undraw_stars()
+    }
+  })
   return (
     <div id="inter-home">
       <SeLogo aRef={props.aref.se_logo_ref} />
@@ -21,7 +69,7 @@ export function Inter_home(props) {
           <hr />
         </div>
       </div>
-      <img id="se-log-img" src={inw}></img>
+      <div id='stars_cont'></div>
       <TheUniversalPart />
       <Matter sec_title="more" title="dark energy" num="68" txt={txxxt} />
       <Matter sec_title="than" title="dark matter" num="27" txt={txxxt} />
@@ -38,3 +86,5 @@ export function Inter_home(props) {
     </div>
   );
 }
+
+export default memo(Inter_home)

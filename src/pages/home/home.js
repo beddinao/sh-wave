@@ -3,7 +3,7 @@ import './home.css';
 import { Nav_logo } from './components/logo/Logo';
 import  FPa  from './components/f-pa/F-pa';
 import Home_welcome from './components/welcome/Welcom';
-import { Inter_home } from './components/inter-home/Inter';
+import Inter_home from './components/inter-home/Inter';
 import { Footer } from '../../components/footer/Footer';
 import Loading_scene from '../../components/loading/Load';
 import Home_canvas from './components/f-canvas/F_canvas';
