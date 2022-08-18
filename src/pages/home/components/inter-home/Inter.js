@@ -45,7 +45,7 @@ function draw_in() {
         iterations : Infinity , 
         direction : 'alternate'
       })
-    container.appendChild(star);
+    container.appendChild(star)
   }
 }
 

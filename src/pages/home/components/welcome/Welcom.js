@@ -11,7 +11,7 @@ var a_nom, b_nom, a_width ,whi;
 const tar = {
   get_1: '.side:nth-child(1) > div',
   get_2: '.side:nth-child(2) > div',
-  get_3 : '.side a' 
+  get_3 : '.side a' ,
 };
 const sty = {
   le_1: 'background-position',
