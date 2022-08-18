@@ -1,5 +1,5 @@
 import React from 'react';
-import './Gravity.css';
+import './Gravity.css'
 
 export function Gravity_part() {
   return (
