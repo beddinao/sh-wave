@@ -52,7 +52,8 @@ function draw_in() {
   interv = setInterval(()=>{
     let for_s_wid = parseFloat(getComputedStyle(document.querySelector('.und-Rect-container > div > div:nth-child(2) h1')).width);
     if(for_s_wid >= s_wid){
-      window.clearInterval(interv)
+      window.clearInterval(interv) ;
+      oo = 0 ;
     }else{
       oo++ ;
       $('.und-Rect-container > div > div:nth-child(2) h1').css('letter-spacing',oo + 'px')
