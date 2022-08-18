@@ -8,7 +8,7 @@ import { Int_h1 } from '../int-h1/Int';
 
 var txxxt =
   'consectetur adipisicing elit, sed doi eiusmod tempor incididunt ut labore et dolore magna fef fe  Ut enim ad minim veniam.';
-var container , wid , hei , m_size ;
+var container , wid , s_wid , hei , m_size , interv ;
 
 const rando_m = (min , max) => {
   return min + Math.random() * ( max - min )
@@ -17,6 +17,7 @@ const rando_m = (min , max) => {
 function draw_stars() {
   container = document.getElementById('stars_cont');
   wid = parseFloat(getComputedStyle(container).width);
+  s_wid = parseFloat(getComputedStyle(document.getElementById('s_width')).width) - 25 ;
   hei = parseFloat(getComputedStyle(container).height);
 
   draw_in();
@@ -47,6 +48,16 @@ function draw_in() {
       })
     container.appendChild(star)
   }
+  let oo = 0 ;
+  interv = setInterval(()=>{
+    let for_s_wid = parseFloat(getComputedStyle(document.querySelector('.und-Rect-container > div > div:nth-child(2) h1')).width);
+    if(for_s_wid >= s_wid){
+      window.clearInterval(interv)
+    }else{
+      oo++ ;
+      $('.und-Rect-container > div > div:nth-child(2) h1').css('letter-spacing',oo + 'px')
+    }
+  },5)
 }
 
 function undraw_stars() {
@@ -69,8 +80,8 @@ function Inter_home(props) {
         <div>
           <div id='stars_cont'></div>
         </div>
-        <div>
-          <h1>from the Universe to the Universe</h1>
+        <div id='s_width' >
+          <h1 id='to_s_width' >from the Universe to the Universe</h1>
           <hr />
         </div>
         </div>

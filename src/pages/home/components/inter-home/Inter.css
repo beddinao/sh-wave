@@ -15,7 +15,6 @@
   font-family: monospace;
   font-size: 15px;
   font-weight: 100;
-  letter-spacing: .5rem;
 }
 .und-Rect-container > div > div:nth-child(2) hr {
   width: 100%;
@@ -28,8 +27,8 @@
   overflow : hidden ;
   position : absolute ;
   background : linear-gradient(to top,transparent , var(--background) 20%) ;
-  top : 510vh ;
-  height: 164vh;
+  top : 500vh ;
+  height: 174vh;
   width: 80%;
   border-radius: 0vh 0vh 200vw 200vw
 }
