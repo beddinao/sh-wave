@@ -1,26 +1,23 @@
-.und-Rect-container {
-  justify-content: flex-start;
-}
-.und-Rect-container > div:nth-child(1) {
-  height: 47vh;
+.und-Rect-container > div > div:nth-child(1) {
+  height: 60vh;
   width: 40%;
   border: 1px solid var(--main-color);
-  z-index : -2 ;
+  border-top:none ;
 }
-.und-Rect-container > div:nth-child(2) {
-  height: 15vh;
+.und-Rect-container > div >  div:nth-child(2) {
+  height: 10vh;
   justify-content: flex-end;
   row-gap: 2vh;
-  width: auto;
+  width: 40%;
 }
-.und-Rect-container > div:nth-child(2) h1 {
+.und-Rect-container > div > div:nth-child(2) h1 {
   color: var(--main-color);
   font-family: monospace;
   font-size: 15px;
   font-weight: 100;
-  letter-spacing: 5px;
+  letter-spacing: .5rem;
 }
-.und-Rect-container > div:nth-child(2) hr {
+.und-Rect-container > div > div:nth-child(2) hr {
   width: 100%;
   height: 1px;
   color: var(--main-color);
@@ -29,13 +26,12 @@
 #stars_cont {
   display : unset ;
   overflow : hidden ;
-  height: 140vh;
+  position : absolute ;
+  background : linear-gradient(to top,transparent , var(--background) 20%) ;
+  top : 510vh ;
+  height: 164vh;
   width: 80%;
-  position: absolute;
-  top: 510vh;
-  border-radius: 0vh 0vh 70vw 70vw;
-  z-index : -1 ;
-  background : var(--background) ;
+  border-radius: 0vh 0vh 200vw 200vw;
 }
 .a_star{
   position : relative ;

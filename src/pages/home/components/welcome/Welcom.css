@@ -33,7 +33,6 @@
 }
 .bg-wrapper:nth-child(1) img {
   width: 70%;
-  opacity: 50%;
 }
 .bg-wrapper:nth-child(2) img {
   width: 35vw;

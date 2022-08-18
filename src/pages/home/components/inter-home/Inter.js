@@ -22,13 +22,13 @@ function draw_stars() {
   draw_in();
 }
 function draw_in() {
-  m_size = (wid * hei) / 8000;
+  m_size = (wid * hei) / 9000;
   for (let i = 0; i < m_size; i++) {
     let star = document.createElement('div');
     let o_size = rando_m(1, 4);
     let o_co = `rgba(255,255,255,${rando_m(.01,.8)})` ;
 
-    star.style.top = rando_m(0, 100 - m_size / 6) + '%';
+    star.style.top = rando_m(0, 100 - m_size / 10) + '%';
     star.style.left = rando_m(0, 100) + '%';
     star.style.width = o_size + 'px';
     star.style.height = o_size + 'px';
@@ -61,15 +61,20 @@ function Inter_home(props) {
   })
   return (
     <div id="inter-home">
-      <SeLogo aRef={props.aref.se_logo_ref} />
+      <div id='center-S'>
+        <SeLogo aRef={props.aref.se_logo_ref} />
+      </div>
       <div id="center-S" className="und-Rect-container">
-        <div></div>
+        <div>
+        <div>
+          <div id='stars_cont'></div>
+        </div>
         <div>
           <h1>from the Universe to the Universe</h1>
           <hr />
         </div>
+        </div>
       </div>
-      <div id='stars_cont'></div>
       <TheUniversalPart />
       <Matter sec_title="more" title="dark energy" num="68" txt={txxxt} />
       <Matter sec_title="than" title="dark matter" num="27" txt={txxxt} />
