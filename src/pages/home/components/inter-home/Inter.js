@@ -8,22 +8,34 @@ import { Int_h1 } from '../int-h1/Int';
 
 var txxxt =
   'consectetur adipisicing elit, sed doi eiusmod tempor incididunt ut labore et dolore magna fef fe  Ut enim ad minim veniam.';
-var container , wid , s_wid , hei , m_size , interv ;
+var container , wid , s_wid , hei , svg , vg_he , vg_wid;
 
 const rando_m = (min , max) => {
   return min + Math.random() * ( max - min )
 }
-
-function draw_stars() {
+const get_width = (tar , key) => {
+  return parseFloat(getComputedStyle(document.querySelector(tar)).width) - key 
+}
+function draw_() {
   container = document.getElementById('stars_cont');
-  wid = parseFloat(getComputedStyle(container).width);
-  s_wid = parseFloat(getComputedStyle(document.getElementById('s_width')).width) - 25 ;
+  svg = document.getElementById('_svg') ;
+  vg_he = parseFloat(getComputedStyle(svg).height) - 10;
+  vg_wid = get_width('#_svg' , 10) ;
+  wid = get_width('#stars_cont',0) ;
+  s_wid = get_width('#s_width',25);
   hei = parseFloat(getComputedStyle(container).height);
 
   draw_in();
 }
+function draw_svg(){
+  let html_path_value = `M 10,0 L 10,${vg_he} L ${vg_wid},${vg_he} L ${vg_wid},0` ;
+  let html_path_elem = document.createElementNS('http://www.w3.org/2000/svg','path') ;
+  html_path_elem.setAttributeNS(null,'d',html_path_value) ;
+  html_path_elem.classList.add('a_path') ;
+  svg.appendChild(html_path_elem) ;
+}
 function draw_in() {
-  m_size = (wid * hei) / 11000;
+  let m_size = (wid * hei) / 11000;
   for (let i = 0; i < m_size; i++) {
     let star = document.createElement('div');
     let o_size = rando_m(1, 4);
@@ -48,8 +60,9 @@ function draw_in() {
       })
     container.appendChild(star)
   }
+  draw_svg() ;
   let oo = 0 ;
-  interv = setInterval(()=>{
+  let interv = setInterval(()=>{
     let for_s_wid = parseFloat(getComputedStyle(document.querySelector('.und-Rect-container > div > div:nth-child(2) h1')).width);
     if(for_s_wid >= s_wid){
       window.clearInterval(interv) ;
@@ -61,25 +74,34 @@ function draw_in() {
   },5)
 }
 
-function undraw_stars() {
+function _undraw() {
   $('.a_star').remove();
+  $('.a_path').remove();
 }
 function Inter_home(props) {
   useEffect(()=>{
-    draw_stars()
+    draw_()
     return () =>{
-      undraw_stars()
+      _undraw()
     }
   })
   return (
     <div id="inter-home">
       <div id='center-S'>
+        <div id='stars_cont'></div>
         <SeLogo aRef={props.aref.se_logo_ref} />
       </div>
       <div id="center-S" className="und-Rect-container">
         <div>
         <div>
-          <div id='stars_cont'></div>
+          <svg id="_svg" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="b_" gradientTransform="rotate(90)">
+                <stop offset="40%" stopColor="black" />
+                <stop offset="60%" stopColor="#006eff" />
+              </linearGradient>
+            </defs>
+          </svg>
         </div>
         <div id='s_width' >
           <h1 id='to_s_width' >from the Universe to the Universe</h1>

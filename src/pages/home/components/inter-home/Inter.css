@@ -1,14 +1,20 @@
 .und-Rect-container > div > div:nth-child(1) {
   height: 60vh;
   width: 40%;
-  border: 1px solid var(--main-color);
-  border-top:none ;
+}
+.und-Rect-container > div > div:nth-child(1) svg{
+  height : 100% ;
+  width : 100% ;
+}
+#_svg path{
+  stroke : url('#b_') ;
+  stroke-width: 2 ;
 }
 .und-Rect-container > div >  div:nth-child(2) {
   height: 10vh;
   justify-content: flex-end;
   row-gap: 2vh;
-  width: 40%;
+  width: calc(40% - 20px);
 }
 .und-Rect-container > div > div:nth-child(2) h1 {
   color: var(--main-color);
@@ -26,11 +32,10 @@
   display : unset ;
   overflow : hidden ;
   position : absolute ;
-  background : linear-gradient(to top,transparent , var(--background) 20%) ;
   top : 500vh ;
   height: 174vh;
   width: 80%;
-  border-radius: 0vh 0vh 200vw 200vw
+  border-radius: 0vh 0vh 50vw 50vw
 }
 .a_star{
   position : relative ;

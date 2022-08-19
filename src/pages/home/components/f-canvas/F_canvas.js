@@ -3,7 +3,7 @@ import './F_canvas.css';
 var svg, cW, cH;
 
 function draw_pol() {
-  svg = document.getElementById('svg');
+  svg = document.getElementById('svg_');
   cW = parseFloat(getComputedStyle(svg).width);
   cH = parseFloat(getComputedStyle(svg).height);
 
@@ -36,7 +36,7 @@ function Home_canvas() {
   return (
     <div id="center-S">
       <div className="svg_con">
-        <svg id="svg" xmlns="http://www.w3.org/2000/svg">
+        <svg id="svg_" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="b_gr_2" gradientTransform="rotate(90)">
               <stop offset="5%" stopColor="rgb(1,1,1)" />

@@ -4,7 +4,7 @@ import { isVisible } from '../../home';
 import $ from 'jquery';
 import Home_sides from '../sides/Sides';
 import Solar_h1 from '../so_h1/So_h1';
-import w_1 from './img/wap_2.jpg' ;
+import w_1 from './img/wap_1.jpg' ;
 import w_2 from './img/wp_2.jpeg' ;
 
 var a_nom, b_nom, a_width ,whi;
