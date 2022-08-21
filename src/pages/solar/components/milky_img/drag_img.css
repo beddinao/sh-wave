@@ -11,9 +11,8 @@
 .guide_icon{
   position : absolute ;
   height : 5vh ;
-  width : 5vh ;
   top : 150% ;
   left : 90% ;
-  border-radius : 50% ;
-  border : 1px solid var(--txt) 
+  background : url('./guide_icon.png');
+  background-size: cover ;
 }
