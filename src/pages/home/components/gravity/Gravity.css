@@ -15,12 +15,7 @@
   text-align : center ;
   grid-gap: 3vh ;
 }
-.gravity-card h1{
-  font-size: 70px ;
-  letter-spacing: .6vw
-}
 .gravity-card p{
   padding :2vh 0vh ;
   width : 80% ;
-  font-size: 15px
 }

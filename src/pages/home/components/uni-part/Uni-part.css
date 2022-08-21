@@ -1,14 +1,9 @@
 .universe-part h1 {
-  font-size: 100px;
   text-align: center;
   letter-spacing: 1vw;
 }
 .universe-part p {
-  font-family: monospace;
-  font-size: 15px;
-  color: var(--text);
   text-align: center;
-  width: 20vw;
   transition-duration: 0.3s;
 }
 .theUniversalCard {

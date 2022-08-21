@@ -5,12 +5,12 @@ export function Gravity_part() {
   return (
     <div>
       <div id="center-S">
-        <h1>a Force</h1>
+        <h1 className='arc_h1'>a Force</h1>
       </div>
       <div id="center-S">
         <div className="gravity-card">
           <div>
-            <h1>
+            <h1 className='arc_h1'>
               That
               <br />
               pulls/puts

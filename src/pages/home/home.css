@@ -15,14 +15,6 @@
   font-size: 10vw;
   width: auto;
 }
-#for-Hv,
-.for-st {
-  font-family: serif;
-  font-style: oblique;
-}
-.for-st {
-  color: var(--main-color);
-}
 @media only screen and (min-width : 900px){
   .txt-container h1{
     position: absolute;

@@ -110,8 +110,8 @@ function Inter_home(props) {
         </div>
       </div>
       <TheUniversalPart />
-      <Matter sec_title="more" title="dark energy" num="68" txt={txxxt} />
-      <Matter sec_title="than" title="dark matter" num="27" txt={txxxt} />
+      <Matter sec_title="more" title="dark energy" num="68% " txt={txxxt} />
+      <Matter sec_title="than" title="dark matter" num="27% " txt={txxxt} />
       <Matter sec_title="and the" title="matter we know" num="" txt="" />
       <div id="center-S">
         <div>

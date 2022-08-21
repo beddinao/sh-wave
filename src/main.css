@@ -58,6 +58,7 @@ p {
   font-size: 15px;
   color: var(--txt);
   font-family: monospace;
+  max-width : 35vw ;
 }
 a,
 a:active,
@@ -73,4 +74,12 @@ main,
 #center-S {
   scroll-snap-align: center;
   height: 100vh;
+}
+.for-st {
+  font-family: serif;
+  font-style: oblique;
+  color: var(--main-color);
+}
+.arc_h1{
+  font-size : 90px ;
 }
