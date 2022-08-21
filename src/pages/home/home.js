@@ -9,14 +9,14 @@ import Loading_scene from '../../components/loading/Load';
 import Home_canvas from './components/f-canvas/F_canvas';
 
 export function isElementInViewport(elem) {
-  var rect = elem.getBoundingClientRect();
+  var rect = elem.getBoundingClientRect() ;
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
     rect.bottom <=
       (window.innerHeight || document.documentElement.clientHeight) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
+  )
 }
 export function isVisible(ref) {
   const [isIntersecting, setIntersecting] = useState(false);

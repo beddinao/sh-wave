@@ -1,4 +1,4 @@
-import React, { memo, useEffect } from 'react';
+import React, { memo } from 'react';
 import Loading_scene from '../../components/loading/Load';
 import Faits from './components/faits/Faits';
 import Wrapper from './components/img_wrapper/Wrapper';

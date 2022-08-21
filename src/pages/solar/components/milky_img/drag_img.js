@@ -4,14 +4,14 @@ import './drag_img.css' ;
 let zoom = 1 ;
 let speed = 0.08 ;
 var elmnt ;
-var pos1 = 0 , pos2 = 0 , pos3 = 0 , pos4 = 0 ;
+var pos_1 = 0 , pos_2 = 0 , pos_3 = 0 , pos_4 = 0 ;
 
 function Milky_way_img(props){
   function handle_wheel(e){
     if(e.deltaY > 0){
       if(zoom <= 1){
         set_size('auto','auto') ;
-        zoom = 1 ;
+        zoom = 1 
       }else{
         zoom -= speed
       }
@@ -29,8 +29,8 @@ function Milky_way_img(props){
   function handle_down(e) {
     e = e || window.event;
     e.preventDefault();
-    pos3 = e.clientX;
-    pos4 = e.clientY;
+    pos_3 = e.clientX;
+    pos_4 = e.clientY;
     document.onmouseup = handle_close;
     document.onmousemove = handle_move;  
   }
@@ -38,23 +38,23 @@ function Milky_way_img(props){
     e = e || window.event;
     e.preventDefault();
     if(zoom > 1.5){
-      pos1 = pos3 - e.clientX;
-      pos2 = pos4 - e.clientY;
-      pos3 = e.clientX;
-      pos4 = e.clientY;
-      set_size((elmnt.offsetTop - pos2) + "px",(elmnt.offsetLeft - pos1) + "px" )
+      pos_1 = pos_3 - e.clientX;
+      pos_2 = pos_4 - e.clientY;
+      pos_3 = e.clientX;
+      pos_4 = e.clientY;
+      set_size((elmnt.offsetTop - pos_2) + "px",(elmnt.offsetLeft - pos_1) + "px" )
     }
   }
   function handle_close() {
     document.onmouseup = null;
     document.onmousemove = null;
   }
-  function set_size(top,left){
-    elmnt.style.top = top ;
-    elmnt.style.left = left ;
+  function set_size(t , l){
+    elmnt.style.top = t ;
+    elmnt.style.left = l ;
   }
   useEffect(()=>{
-    elmnt = document.getElementById('target') ;
+    elmnt = document.getElementById('target_') ;
     return() =>{
       set_size('auto','auto') ;
       handle_close()
@@ -63,7 +63,7 @@ function Milky_way_img(props){
   return(
     <div id='center-S'>
       <div 
-        id='target'
+        id='target_'
         onWheel={handle_wheel} 
         onMouseEnter={handle_hover} 
         onMouseLeave={handle_out} 

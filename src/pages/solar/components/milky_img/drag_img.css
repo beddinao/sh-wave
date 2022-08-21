@@ -1,9 +1,9 @@
-#target{
+#target_{
   height : 70% ;
   width : 70% ;
   position : absolute ;
 }
-#target img{
+#target_ img{
   height : 100% ;
   width : 100% ;
   transition-duration : 0.3s ;
@@ -15,5 +15,5 @@
   top : 150% ;
   left : 90% ;
   border-radius : 50% ;
-  border : 1px solid var(--txt) ;
+  border : 1px solid var(--txt) 
 }

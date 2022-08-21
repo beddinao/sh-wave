@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, memo } from 'react';
 import './Welcom.css';
 import { isVisible } from '../../home';
-import $ from 'jquery';
 import Home_sides from '../sides/Sides';
 import Solar_h1 from '../so_h1/So_h1';
 import w_1 from './img/wap_1.jpg' ;
