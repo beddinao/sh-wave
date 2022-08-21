@@ -10,7 +10,8 @@
 }
 .guide_icon{
   position : absolute ;
-  height : 5vh ;
+  height : 8vh ;
+  width : 8vh ;
   top : 150% ;
   left : 90% ;
   background : url('./guide_icon.png');
