@@ -1,0 +1,19 @@
+#target{
+  height : 70% ;
+  width : 70% ;
+  position : absolute ;
+}
+#target img{
+  height : 100% ;
+  width : 100% ;
+  transition-duration : 0.3s ;
+}
+.guide_icon{
+  position : absolute ;
+  height : 5vh ;
+  width : 5vh ;
+  top : 150% ;
+  left : 90% ;
+  border-radius : 50% ;
+  border : 1px solid var(--txt) ;
+}

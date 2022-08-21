@@ -2,10 +2,6 @@ canvas {
   border: 1px solid var(--border);
   transition-duration: 0.5s;
 }
-img:not(#cir) {
-  width: 70%;
-  height: 70%;
-}
 #p_Conn {
   width: 50%;
   align-self: center;
