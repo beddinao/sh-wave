@@ -6,7 +6,14 @@
     top: 0%;
   }
 }
-
+@keyframes menu_ex_an{
+  0%{
+    background-position-x : 10% ;
+  }
+  100%{
+    background-position-x : 90% ;
+  }
+}
 .menu_conta {
   position: absolute;
   left: 0%;
@@ -14,9 +21,8 @@
   height: 100vh;
   width: 100%;
   background: var(--background);
-  justify-content: flex-start;
-  transition-duration: 0.3s;
-  animation: in_ou 0.3s linear alternate;
+  transition-duration: 0.4s;
+  animation: in_ou 0.5s linear ;
 }
 .menu_conta > div {
   width: 90%;
@@ -47,7 +53,6 @@
 }
 .menu_conta > div:nth-child(2) > div:nth-child(1) h1:hover {
   text-decoration: underline;
-  text-decoration-color: var(--text);
 }
 .menu_conta > div:nth-child(2) > div:nth-child(2) {
   justify-content: flex-start;
@@ -55,12 +60,28 @@
   padding-top: 5vh;
   grid-gap: 2vh;
 }
-.menu_conta > div:nth-child(2) > div:nth-child(2) div {
+.menu_conta > div:nth-child(2) > div:nth-child(2) > div {
   height: 40%;
   width: 80%;
   border: 1px solid var(--border);
 }
-.menu_conta > div:nth-child(2) > div:nth-child(2) h2 {
+.menu_conta > div:nth-child(2) > div:nth-child(2) > div > h1{
+  font-size: 35px ;
+  letter-spacing: .4rem ;
+  font-family: serif;
+  background: radial-gradient(
+      circle closest-side at center,
+      var(--main-color) 50%,
+      var(--txt) 50%
+    );
+  background-size: 200% 200%;
+  background-position-y: center ;
+  color: transparent;
+  background-clip: text ;
+  transition-duration: 0.1s;
+  animation : menu_ex_an 3s linear infinite alternate ;
+}
+.menu_conta > div:nth-child(2) > div:nth-child(2) > h2 {
   font-size: 15px;
   font-weight: 100;
   color: var(--txt);

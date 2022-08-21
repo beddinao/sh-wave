@@ -17,10 +17,14 @@ export function Menu_btn(props) {
 export function Menu(props){
   const [is_visible , setIs_visible] = useState(false) ;
   const handle_in = () =>{
-    setIs_visible(true)
+    setIs_visible(true) ;
   }
   const handle_out = () =>{
-    setIs_visible(false)
+    $('.menu_conta').animate({
+      top : '-100vh' 
+    },500,'swing',()=>{
+      setIs_visible(false)
+    })
   }
   if(!is_visible){
     return <Menu_btn click={handle_in} class={props.class} />

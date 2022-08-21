@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom' ;
 function Menu_conte(props){
   useEffect(()=>{
     $('body').css('overflow','hidden')
+    
     return()=>{
       $('body').css('overflow','visible')
     }
@@ -23,7 +24,9 @@ function Menu_conte(props){
           <Link to='/stars'><h1 >stars</h1></Link>
         </div>
         <div>
-          <div></div>
+          <div>
+            <h1>Solar System</h1>
+          </div>
           <h2>Hover over Title to display Links</h2>
         </div>
       </div>
