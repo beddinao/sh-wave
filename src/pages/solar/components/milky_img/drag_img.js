@@ -16,6 +16,7 @@ function Milky_way_img(props) {
     if (e.deltaY > 0) {
       if (zoom <= 1) {
         $(e.currentTarget).css('cursor', 'default');
+        $('.guide_btn').css('display','block') ;
         set_size('auto', 'auto');
         zoom = 1;
       } else {
@@ -23,6 +24,7 @@ function Milky_way_img(props) {
       }
     } else {
       $(e.currentTarget).css('cursor', 'grab');
+      $('.guide_btn').css('display','none') ;
       zoom >= 4 ? (zoom = 4) : (zoom += speed);
     }
     $(e.currentTarget).css('transform', `scale(${zoom})`);
@@ -83,11 +85,11 @@ function Milky_way_img(props) {
         onMouseEnter={handle_hover}
         onMouseLeave={handle_out}
         onMouseDown={handle_down}
-        onClick={handle_click}
       >
         <img src={props.i_b} ></img>
       </div>
-      <div className="guide_icon"></div>
+      <div className="guide_icon" ></div>
+      <div className="guide_btn" onClick={handle_click} ></div>
     </div>
   );
 }

@@ -16,3 +16,14 @@
   background : url('./guide_icon.png');
   background-size: cover ;
 }
+.guide_btn{
+  position : absolute ;
+  height : 2vh ;
+  width : 4vh ;
+  top : 180% ;
+  border : 1px solid var(--txt) ;
+  transition-duration:  .3s;
+}
+.guide_btn:hover{
+  background : var(--border) ;
+}
