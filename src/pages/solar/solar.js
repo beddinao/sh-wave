@@ -22,7 +22,7 @@ export function MilkyWay() {
     <Loading_scene tm={500}>
       <main>
         <S_nav name="milky way" isHid="isHid" img={ring_2} />
-        <Milky_way_img img={milkyWay_img_a} />
+        <Milky_way_img i_a={milkyWay_img_a} i_b={milkyWay_img_b}  />
         <Center_3 txt={txxxt} />
         <Center_35 txt={txxxt} />
       </main>
