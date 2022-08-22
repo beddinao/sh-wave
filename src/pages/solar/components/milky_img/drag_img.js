@@ -10,12 +10,14 @@ function Milky_way_img(props){
   function handle_wheel(e){
     if(e.deltaY > 0){
       if(zoom <= 1){
+        $(e.currentTarget).css('cursor','default');
         set_size('auto','auto') ;
         zoom = 1 
       }else{
         zoom -= speed
       }
     }else{
+      $(e.currentTarget).css('cursor','grab');
       (zoom >= 4) ? zoom = 4 : zoom += speed
     }
     $(e.currentTarget).css('transform',`scale(${zoom})`)
