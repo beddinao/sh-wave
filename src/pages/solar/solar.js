@@ -8,8 +8,8 @@ import Solar_canvas from './components/canvas/Canvas';
 import Loading_scene from '../../components/loading/Load';
 import ring_1 from './img/ring-1.svg' ;
 import ring_2 from './img/glRing.png' ;
-import milkyWay_img_a from './img/milky_way_a.tif' ;
-//import milkyWay_img_b from './img/milky_way_b.tif' ;
+import milkyWay_img_a from './img/milky_way_a.jpg' ;
+import milkyWay_img_b from './img/milky_way_b.jpg' ;
 
 var txxxt =
   'consectetur adipisicing elit, sed doi eiusmod tempor incididunt ut labore et dolore magna fef fe  Ut enim ad minim veniam.';
