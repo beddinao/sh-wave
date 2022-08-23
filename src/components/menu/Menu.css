@@ -22,7 +22,7 @@
   width: 100%;
   background: var(--background);
   transition-duration: 0.4s;
-  animation: in_ou 0.5s linear ;
+  animation: in_ou 0.4s ;
 }
 .menu_conta > div {
   width: 90%;

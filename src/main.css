@@ -4,7 +4,9 @@
   --text: #cccccc;
   --bg: #111111;
   --txt: #989898;
+  --half-border : rgb(5,5,5) ;
   --border: rgb(10, 10, 10);
+  --semi-border : rgb(30,30,30) ;
 }
 * {
   padding: 0px;

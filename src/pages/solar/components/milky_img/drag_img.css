@@ -1,29 +1,81 @@
+.gal_con{
+  flex-direction: row;
+}
+
 #target_{
+  align-self: center ;
   height : 90% ;
   width : 70% ;
-  position : absolute ;
+  position : absolute 
 }
 #target_ img{
   height : 100% ;
-  transition-duration : 0.3s ;
+  transition-duration : 0.3s 
 }
-.guide_icon{
-  position : absolute ;
-  height : 8vh ;
-  width : 8vh ;
-  top : 150% ;
-  left : 90% ;
-  background : url('./guide_icon.png');
-  background-size: cover ;
+/* */
+.cont_con{
+  align-self: flex-end ;
+  width : 100% ;
+  flex-direction: row ;
+  justify-content: space-between ;
+  padding : 2% 4% 
 }
-.guide_btn{
-  position : absolute ;
-  height : 2vh ;
-  width : 4vh ;
-  top : 180% ;
-  border : 1px solid var(--txt) ;
-  transition-duration:  .3s;
+/* */
+.notice_container{
+  width : fit-content ;
+  transition-duration: 3s ;
+  justify-content: flex-end;
+  grid-gap: 2vh ;
 }
-.guide_btn:hover{
-  background : var(--border) ;
+.notice{
+  height : 15vh ;
+  width : 25vw ;
+  border : 1px solid var(--border) ;
+  z-index : 15 ;
+  transition-duration: .3s ;
+  background : linear-gradient(-45deg  , rgba(0,0,0,.3), transparent 80%)
+}
+.notice > div{
+  width : 80% ;
+}
+.notice > div:nth-child(1){
+  height : 70% ;
+  flex-direction : row ;
+  justify-content: space-around ;
+}
+.notice > div:nth-child(1) h1 {
+  max-width : 60% ;
+  color : var(--semi-border) ;
+}
+.notice > div:nth-child(1) h1 ,
+.gal_con button {
+  font-size : 15px ;
+  text-transform: uppercase ;
+}
+.notice > div:nth-child(1) div {
+  width : 30%  ;
+  background-size : cover ;
+  background-position : center ;
+}
+.notice > div:nth-child(2){
+  height : 30% ;
+  align-items: flex-end ;
+}
+.gal_con button{
+  height : 2em ;
+  padding: 0 2em ;
+  border : none ;
+  color : var(--semi-border) ;
+  transition-duration : .3s ;
+  text-align : center ;
+  background : transparent ;
+}
+.gal_con button:hover {
+  color : var(--main-color ) ;
+  cursor : pointer ;
+  background : var(--half-border)
+}
+#cont_s{
+  color : var(--main-color) ;
+  align-self: flex-end ;
 }
