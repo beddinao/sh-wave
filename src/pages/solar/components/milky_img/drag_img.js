@@ -1,6 +1,6 @@
 import React, { memo, useEffect , useState } from 'react';
 import './drag_img.css';
-import cursor_icon_1 from './scroll_icon.png' ;
+import cursor_icon_1 from './zoom_icon.png' ;
 import cursor_icon_2 from './grab_icon.png' ;
 
 let zoom = 1 ;
