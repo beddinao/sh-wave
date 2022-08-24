@@ -15,7 +15,7 @@ export function Loading(props) {
     };
   }, []);
   return (
-    <div id="center-s" style={{ height : '100' + props.ght }} >
+    <div className="center-f" style={{ height : '100' + props.ght }} >
       <h1 className="sp">
         <span>Loading</span>
         <span id="dot">
@@ -35,7 +35,7 @@ function Loading_scene(props) {
     };
     loadData();
   }, []);
-  return (is_loading) ? <Loading ght={'vh'} /> : props.children
+  return (is_loading) ? <Loading ght='vh' /> : props.children
 }
 
 export default memo(Loading_scene);

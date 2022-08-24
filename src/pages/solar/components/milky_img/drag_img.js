@@ -104,11 +104,10 @@ function Gal_img(props){
     const loadData = async () => {
       await new Promise((r) => setTimeout(r, 2500));
       setIs_loading(false);
-      handle_click() ;
     };
     loadData();
   },[props.con])
-  return (is_loading) ? <Loading ght={'%'} /> : (props.con) ? <img src={milkyWay_img_b} /> : <img src={milkyWay_img_a} /> 
+  return (is_loading) ? <Loading ght='%' /> : (props.con) ? <img src={milkyWay_img_b} /> : <img src={milkyWay_img_a} /> 
 }
 
 function Milky_way_img(){
@@ -136,6 +135,7 @@ function Milky_way_img(){
       <Gal_notice>
         <button onClick={()=>{
           (which_img) ? set_which_img(false) : set_which_img(true) ;
+          handle_click() ;
         }} id='cont_s'>orientations</button>
       </Gal_notice >
   </div>
