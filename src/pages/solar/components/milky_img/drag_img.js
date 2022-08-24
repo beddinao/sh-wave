@@ -1,7 +1,7 @@
 import React , {memo , useEffect , useState} from 'react' ;
 import './drag_img.css' ;
-import cursor_icon_1 from './img/icons/zoom_icon.png' ;
-import cursor_icon_2 from './img/icons/grab_icon.png' ;
+import cursor_icon_1 from './img/zoom_icon.png' ;
+import cursor_icon_2 from './img/grab_icon.png' ;
 import milkyWay_img_a from './img/milky_way_a.jpg' ;
 import milkyWay_img_b from './img/milky_way_b.jpg' ;
 
