@@ -1,9 +1,8 @@
 import React, { memo, useEffect, useState } from 'react';
 import './Load.css';
 
-var int;
-var doot;
-function Loading() {
+export function Loading(props) {
+  var int , doot ;
   useEffect(() => {
     var dot = document.getElementById('dot');
     int = setInterval(() => {
@@ -16,7 +15,7 @@ function Loading() {
     };
   }, []);
   return (
-    <div id="center-S">
+    <div id="center-s" style={{ height : '100' + props.ght }} >
       <h1 className="sp">
         <span>Loading</span>
         <span id="dot">
@@ -36,11 +35,7 @@ function Loading_scene(props) {
     };
     loadData();
   }, []);
-  if (is_loading) {
-    return <Loading />;
-  } else {
-    return props.children;
-  }
+  return (is_loading) ? <Loading ght={'vh'} /> : props.children
 }
 
 export default memo(Loading_scene);

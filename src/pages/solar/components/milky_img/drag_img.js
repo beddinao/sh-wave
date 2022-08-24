@@ -1,7 +1,8 @@
 import React , {memo , useEffect , useState} from 'react' ;
 import './drag_img.css' ;
-import cursor_icon_1 from './img/zoom_icon.png' ;
-import cursor_icon_2 from './img/grab_icon.png' ;
+import { Loading } from '../../../../components/loading/Load' ;
+import cursor_icon_1 from './img/icons/zoom_icon.png' ;
+import cursor_icon_2 from './img/icons/grab_icon.png' ;
 import milkyWay_img_a from './img/milky_way_a.jpg' ;
 import milkyWay_img_b from './img/milky_way_b.jpg' ;
 
@@ -97,7 +98,17 @@ function Gal_notice(props){
 }
 
 function Gal_img(props){
-  return (props.con) ? <img src={milkyWay_img_b} /> : <img src={milkyWay_img_a} />
+  const [is_loading, setIs_loading] = useState();
+  useEffect(()=>{
+    setIs_loading(true) ;
+    const loadData = async () => {
+      await new Promise((r) => setTimeout(r, 2500));
+      setIs_loading(false);
+      handle_click() ;
+    };
+    loadData();
+  },[props.con])
+  return (is_loading) ? <Loading ght={'%'} /> : (props.con) ? <img src={milkyWay_img_b} /> : <img src={milkyWay_img_a} /> 
 }
 
 function Milky_way_img(){
@@ -125,7 +136,6 @@ function Milky_way_img(){
       <Gal_notice>
         <button onClick={()=>{
           (which_img) ? set_which_img(false) : set_which_img(true) ;
-          handle_click() ;
         }} id='cont_s'>orientations</button>
       </Gal_notice >
   </div>
