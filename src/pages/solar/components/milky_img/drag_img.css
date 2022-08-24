@@ -10,7 +10,8 @@
 }
 #target_ img{
   height : 100% ;
-  transition-duration : 0.3s 
+  transition-duration : 0.3s ;
+  border : 1px solid var(--border) ;
 }
 /* */
 .cont_con{
@@ -52,10 +53,8 @@
   font-size : 15px ;
   text-transform: uppercase ;
 }
-.notice > div:nth-child(1) div {
+.notice > div:nth-child(1) img {
   width : 30%  ;
-  background-size : cover ;
-  background-position : center ;
 }
 .notice > div:nth-child(2){
   height : 30% ;
