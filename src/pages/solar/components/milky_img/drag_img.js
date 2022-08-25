@@ -101,7 +101,8 @@ function Gal_img(props){
   const [is_loading, setIs_loading] = useState();
   useEffect(()=>{
     $(elmnt).css('transform', `scale(1)`);
-    set_size('auto', 'auto');
+    $(elmnt).css('left', 'auto');
+    $(elmnt).css('top', 'auto');
     setIs_loading(true) ;
     const loadData = async () => {
       await new Promise((r) => setTimeout(r, 2500));
