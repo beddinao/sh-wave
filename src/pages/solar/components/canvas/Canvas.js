@@ -1,31 +1,56 @@
 import React, { memo, useEffect } from 'react';
-
-var cH, cW, ctx, $canvas;
+import './c_.css' ;
+var cH, cW, ctx, $canvas , btn , earth_size , solarPlanets ;
 var mColor = '#006eff';
-const solarPlanets = [
-  { o: 10, name: 'Planet A' },
-  { o: 20, name: 'Planet B' },
-  { o: 15, name: 'Planet C' },
-  { o: 30, name: 'Earth A' },
-  { o: 40, name: 'Planet E' },
-  { o: 35, name: 'Planet F' },
-  { o: 25, name: 'Planet G' },
-  { o: 35, name: 'Planet H' },
-];
 
 function draw_canvas() {
   const canvas = document.getElementById('canvas');
+  btn = document.getElementById('c_btn') ;
   ctx = canvas.getContext('2d');
 
   canvas.width = window.innerWidth - window.innerWidth / 10;
   canvas.height = window.innerHeight - window.innerHeight / 2;
   cH = parseFloat(getComputedStyle(canvas).height);
   cW = parseFloat(getComputedStyle(canvas).width);
+  earth_size = cW / 120 ;
+
+  solarPlanets = [
+    {
+      o : calc_size(.30) ,
+      name : 'Mercury'
+    },{
+      o : calc_size(.95) ,
+      name : 'Venus'
+    },{
+      o : earth_size ,
+      name : 'Earth'
+    },{
+      o : earth_size / 2 ,
+      name : 'Mars'
+    },{
+      o : calc_size(11) ,
+      name : 'Jupiter'
+    },{
+      o : calc_size(9) ,
+      name : 'Saturn'
+    },{
+      o : calc_size(4) ,
+      name : 'Uranus'
+    },{
+      o : calc_size(3.95) ,
+      name : 'Neptune'
+    }
+  ];
 
   draw_in();
 }
 
+const calc_size = (x) => {
+  return earth_size * x
+}
+
 function draw_in() {
+  $(btn).css('pointer-events','none') ;
   $canvas = $('canvas');
   $.jCanvas.extend({
     name: 'disText',
@@ -41,9 +66,9 @@ function draw_in() {
         text: params.txt,
         x: params.x,
         y: params.y,
-        fillStyle: 'rgb(80,80,80)',
+        fillStyle: 'rgb(100,100,100)',
         fontFamily: 'monospace',
-        fontSize: 15,
+        fontSize: 12,
       });
       $canvas.drawRect({
         layer: true,
@@ -51,9 +76,9 @@ function draw_in() {
         x: params.x,
         y: params.y,
         height: 30,
-        width: 100,
+        width: 90,
         strokeWidth: 1,
-        strokeStyle: 'rgb(10,10,10)',
+        strokeStyle: '#111',
         cornerRadius: 2,
       });
     },
@@ -76,13 +101,13 @@ function draw_in() {
         x: p.x,
         y: cH / 2,
         radius: p.radio,
-        strokeStyle: 'rgb(13,13,13)',
+        strokeStyle: 'rgb(30,30,30)',
         strokeWidth: p.sW,
         fillStyle: p.c,
         mouseover: function (layer) {
           $canvas.disText({
             x: p.sX,
-            y: cH / 1.5 + p.radio,
+            y: ( cH / 1.5 ) + p.radio,
             txt: p.txt,
           });
         },
@@ -124,7 +149,11 @@ function draw_in() {
   });
 
   function drawSolar() {
-    let leftS = cW / (solarPlanets.length + 2);
+    var keey = 0  , aak = 0 ;
+    for(let i = 0 ; i < solarPlanets.length ; i++){
+      keey = keey + solarPlanets[i].o
+    }
+    let leftS = (cW - (keey * 2)) / (solarPlanets.length + 2) ;
     let left = leftS;
 
     $canvas.drawSun({
@@ -145,32 +174,25 @@ function draw_in() {
           {
             strokeWidth: 2,
           },
-          1000,
-          function (layer) {
-            $canvas.removeLayer(solarPlanets[3].name);
-
-            $canvas.drawPlanet({
-              radio: solarPlanets[3].o,
-              x: cW / 2,
-              sX: cW / 2,
-              txt: solarPlanets[3].name,
-              sW: 0,
-              c: $canvas.createGradient({
-                x1: cW / 2 - 100,
-                y1: 0,
-                x2: cW / 2,
-                y2: 0,
-                c1: mColor,
-                c2: '#000',
-              }),
-            });
+          2000,
+          () => {
+            $canvas.animateLayer(
+              'Earth',
+              {
+                strokeStyle : mColor
+              },
+              2500 ,
+              () => {
+                $(btn).css('pointer-events','all') ;
+              }
+            )
           }
         );
       }
     );
-
     solarPlanets.forEach((num) => {
-      left = left + leftS;
+      left = (left) + (leftS + num.o) + aak ;
+      aak = num.o ;
       $canvas.drawPlanet({
         radio: num.o,
         x: cW / 2,
@@ -191,21 +213,24 @@ function draw_in() {
   //...
   //...
 }
-
 function Solar_canvas() {
   useEffect(() => {
     draw_canvas();
-    $('canvas').css('border','1px solid var(--border)') ;
-    $('canvas').css('transition-duration','.5s') ;
     return () => {
       $canvas.removeLayers();
       ctx.clearRect(0, 0, cW, cH);
-      console.log('planets have been removed');
     };
   }, []);
   return (
     <div id="center-S">
       <canvas id="canvas">check something</canvas>
+      <button id='c_btn' onClick={ () => {
+        $canvas.removeLayers() ;
+        ctx.clearRect(0, 0, cW, cH); 
+        //
+        draw_in()
+        //
+      }}>Repeat</button>
     </div>
   );
 }
