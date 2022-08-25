@@ -190,12 +190,13 @@ function draw_in() {
   drawSolar();
   //...
   //...
-  //...
 }
 
 function Solar_canvas() {
   useEffect(() => {
     draw_canvas();
+    $('canvas').css('border','1px solid var(--border)') ;
+    $('canvas').css('transition-duration','.5s') ;
     return () => {
       $canvas.removeLayers();
       ctx.clearRect(0, 0, cW, cH);

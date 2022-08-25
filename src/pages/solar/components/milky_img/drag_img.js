@@ -1,10 +1,10 @@
 import React , {memo , useEffect , useState} from 'react' ;
 import './drag_img.css' ;
 import { Loading } from '../../../../components/loading/Load' ;
-import cursor_icon_1 from './img/zoom_icon.png' ;
-import cursor_icon_2 from './img/grab_icon.png' ;
-import milkyWay_img_a from './img/milky_way_a.jpg' ;
-import milkyWay_img_b from './img/milky_way_b.jpg' ;
+//import cursor_icon_1 from './img/zoom_icon.png' ;
+//import cursor_icon_2 from './img/grab_icon.png' ;
+//import milkyWay_img_a from './img/milky_way_a.jpg' ;
+//import milkyWay_img_b from './img/milky_way_b.jpg' ;
 
 let zoom = 1 , speed = 0.07 , coun = 0;
 var elmnt ;
@@ -85,10 +85,10 @@ function Gal_notice(props){
   return(
     <div className='cont_con' >
       <div className='notice_container' >
-        <Notice img={cursor_icon_1} >
+        <Notice img={'cursor_icon_1'} >
           hover and scroll to zoom
         </Notice>
-        <Notice img={cursor_icon_2} >
+        <Notice img={'cursor_icon_2'} >
           grab and drag to navigate
         </Notice>
       </div>
@@ -100,6 +100,7 @@ function Gal_notice(props){
 function Gal_img(props){
   const [is_loading, setIs_loading] = useState();
   useEffect(()=>{
+    $(elmnt).css('transform', `scale(1)`);
     setIs_loading(true) ;
     const loadData = async () => {
       await new Promise((r) => setTimeout(r, 2500));
@@ -107,7 +108,7 @@ function Gal_img(props){
     };
     loadData();
   },[props.con])
-  return (is_loading) ? <Loading ght='%' /> : (props.con) ? <img src={milkyWay_img_b} /> : <img src={milkyWay_img_a} /> 
+  return (is_loading) ? <Loading ght='%' /> : (props.con) ? <img src={'milkyWay_img_b'} /> : <img src={'milkyWay_img_a'} /> 
 }
 
 function Milky_way_img(){

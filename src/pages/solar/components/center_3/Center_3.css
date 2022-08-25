@@ -1,0 +1,13 @@
+#p_Conn {
+  width: 50%;
+  align-self: center ;
+  align-items: flex-end 
+}
+#p_Conn div {
+  width: 50% ;
+  align-items: flex-start 
+}
+#p_Conn p {
+  height: 100%;
+  width: 100%
+}
