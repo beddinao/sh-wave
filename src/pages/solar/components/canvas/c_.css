@@ -1,0 +1,25 @@
+canvas{
+  border : 1px solid var(--border) ;
+  transition-duration : .3s ;
+}
+
+#c_btn{
+  position : absolute ;
+  border : none ;
+  left : 5% ;
+  top : 190% ;
+  height : 3em ;
+  padding : 0 2em ;
+  background : unset ;
+  font-size : 16px ;
+  font-family : monospace ;
+  color : var(--border) ;
+  transition-duration : .3s ;
+  pointer-events : none ;
+}
+
+#c_btn:hover{
+  color : var(--main-color) ;
+  cursor : pointer ;
+  background : var(--half-border) ;
+}
