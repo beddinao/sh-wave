@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import './solar.css';
 import { Center_3 } from './components/center_3/Center_3';
 import { S_nav } from './components/s_nav/S_nav';
 import Milky_way_img from './components/milky_img/drag_img' ;
