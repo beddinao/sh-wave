@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import Up_btn from '../up_btn/Up_btn' ;
 
 export function Footer() {
   return (
@@ -21,7 +22,7 @@ export function Footer() {
             <h1>websitnam</h1>
           </div>
           <div>
-            <div id="to-up-btn"></div>
+            <Up_btn />
           </div>
         </div>
       </div>

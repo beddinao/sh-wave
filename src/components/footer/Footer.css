@@ -36,12 +36,6 @@
   align-items: flex-end ;
   justify-content: flex-end ;
 }
-#to-up-btn{
-  width : 5vh ;
-  height : 5vh ;
-  border-radius : 50% ;
-  border  : 1px solid var(--txt)
-}
 @media only screen and (max-width : 900px){
   .footer-container > div{
     flex-direction: column ;

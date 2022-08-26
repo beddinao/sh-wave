@@ -1,0 +1,24 @@
+#to-up-btn{
+  width : 3em ;
+  height : 3em ;
+  border-radius : 50% ;
+  border  : 1px solid var(--half-border) ;
+  stroke : var(--semi-border) ;
+  transition-duration : .3s ;
+  background : transparent ;
+  overflow:  hidden ;
+}
+#to-up-btn:hover{
+  background : var(--half-border) ;
+  stroke : var(--main-color) ;
+  cursor: pointer ;
+}
+#to-up-btn svg{
+  height : 100% ;
+  width : 100% ;
+  stroke : inherit ;
+}
+#to-up-btn svg path{
+  stroke-width : 4 ;
+  stroke : inherit ;
+}

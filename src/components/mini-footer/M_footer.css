@@ -1,0 +1,12 @@
+.foo{
+  height : 30vh ;
+  width : 100% ;
+  scroll-snap-align : center ;
+  align-items : center ;
+  border-top : 1px solid var(--border) 
+}
+.foo > div {
+  height : 80% ;
+  width : 80% ;
+  align-items: flex-end ;
+}
