@@ -3,8 +3,8 @@ import './Welcom.css';
 import { isVisible } from '../../home';
 import Home_sides from '../sides/Sides';
 import Solar_h1 from '../so_h1/So_h1';
-//import w_1 from './img/wap_1.jpg' ;
-//import w_2 from './img/wp_2.jpeg' ;
+import w_1 from './img/wap_1.jpg' ;
+import w_2 from './img/wp_2.jpeg' ;
 
 var a_nom, b_nom, a_width ,whi;
 const tar = {
@@ -85,13 +85,13 @@ function Home_welcome(props) {
         <div className="txt-container">
           <div>
             <h1 className='arc_h1'>
-              to the
+              TO THE
               <br />
-              <span className="for-st">Space</span>
+              <span className="for-st">SPACE</span>
               <br />
-              and
+              AND
               <br />
-              beyond
+              BEYOND
             </h1>
           </div>
           <div>{txt_1}</div>
@@ -151,10 +151,10 @@ function Home_welcome(props) {
       </div>
       <div className="wrapper">
         <div className="bg-wrapper">
-          <img src='{w_1}'/>
+          <img src={w_1}/>
         </div>
         <div className="bg-wrapper">
-          <img src='{w_2}'/>
+          <img src={w_2}/>
         </div>
       </div>
     </div>

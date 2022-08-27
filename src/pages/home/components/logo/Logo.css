@@ -14,6 +14,7 @@
   transform: translateX(10px);
 }
 #nav .intro h1:nth-child(2) {
+  font-family: 'Long Cang', cursive;
   font-size: 15px;
   letter-spacing: 7px;
   transform: translateY(-75%) translateX(7px);

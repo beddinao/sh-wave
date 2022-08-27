@@ -25,7 +25,6 @@ body {
   width: 100%;
   background: var(--background);
   color: var(--text);
-  font-family: monospace;
 }
 body::-webkit-scrollbar {
   width: 10px;
@@ -52,14 +51,14 @@ div {
 }
 h1 {
   color: var(--text);
-  font-family: monospace;
+  
   font-weight: lighter;
   text-transform: uppercase;
 }
 p {
   font-size: 15px;
   color: var(--txt);
-  font-family: monospace;
+  font-family: 'Montserrat Alternates', sans-serif;
   max-width : 35vw ;
 }
 a,
@@ -78,10 +77,24 @@ main,
   height: 100vh;
 }
 .for-st {
-  font-family: serif;
   font-style: oblique;
   color: var(--main-color);
 }
+.for_cl {
+  color : var(--main-color)
+}
 .arc_h1{
   font-size : 90px ;
+  font-family: 'Megrim', cursive;
+}
+.arc_h2{
+  font-family: 'Wire One', sans-serif;
+  letter-spacing: .3em;
+}
+@font-face{
+  font-family:'Nico';
+  src:url('./lib/NicoMoji-Regular.ttf') format('truetype');
+}
+.all_h1{
+  font-family: 'Nico';
 }

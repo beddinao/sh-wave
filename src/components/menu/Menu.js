@@ -18,10 +18,10 @@ function Menu_conte(props){
       </div>
       <div>
         <div>
-          <Link to='/'><h1 >home</h1></Link>
-          <Link to='/solar-system'><h1 >Solar System</h1></Link>
-          <Link to='/milky-way'><h1 >milky way</h1></Link>
-          <Link to='/stars'><h1 >stars</h1></Link>
+          <Link to='/'><h1 className='arc_h2' >home</h1></Link>
+          <Link to='/solar-system'><h1 className='arc_h2' >Solar System</h1></Link>
+          <Link to='/milky-way'><h1 className='arc_h2' >milky way</h1></Link>
+          <Link to='/stars'><h1 className='arc_h2' >stars</h1></Link>
         </div>
         <div>
           <div>

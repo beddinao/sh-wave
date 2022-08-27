@@ -22,8 +22,8 @@
 }
 .se-intro h1:nth-child(3) {
   z-index: 1;
-  font-family: fantasy;
+  font-family: 'Long Cang', cursive;
   font-style: oblique;
-  font-size: 70px;
+  font-size: 100px;
   transform: translateY(-75%);
 }

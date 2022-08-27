@@ -24,7 +24,7 @@ export function TheUniversalPart() {
   return (
     <div className="universe-part">
       <div id="center-S">
-        <h1 className='arc_h1'>a universe</h1>
+        <h1 className='arc_h1 for_cl'>a universe</h1>
         <p>
           consectetur adipisicing elit, sed doi eiusmod tempor incididunt ut
           labore et dolore magna fef fe Ut enim ad minim veniam.

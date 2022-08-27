@@ -7,7 +7,7 @@ export function Footer() {
     <div className="footer-container">
       <div>
         <div>
-          <h1>
+          <h1 className='arc_h2'>
             check
             <br />
             out

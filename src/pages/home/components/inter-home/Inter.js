@@ -115,7 +115,7 @@ function Inter_home(props) {
       <Matter sec_title="and the" title="matter we know" num="" txt="" />
       <div id="center-S">
         <div>
-          <h1 className="stars-sh ssh" ref={props.aref.for_viss}>
+          <h1 className="stars-sh ssh arc_h1" ref={props.aref.for_viss}>
             Stars
           </h1>
         </div>

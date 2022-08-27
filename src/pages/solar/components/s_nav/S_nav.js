@@ -17,7 +17,7 @@ export function S_nav(props) {
       >
         <div id="s_logo">
           <img id="cir" src={props.img} className={props.isHid} />
-          <h1>{props.name}</h1>
+          <h1 className='all_h1' >{props.name}</h1>
         </div>
         <Menu class="menuu" />
       </nav>

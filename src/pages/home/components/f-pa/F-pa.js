@@ -6,7 +6,7 @@ function FPa(props) {
   return (
     <div id="center-S" className="f-Pa">
       <Home_logo>
-        <h1 ref={props.aRef}>Hello</h1>
+        <h1 ref={props.aRef} className='all_h1' >Hello</h1>
       </Home_logo>
     </div>
   );

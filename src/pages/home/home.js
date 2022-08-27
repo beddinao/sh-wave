@@ -46,7 +46,7 @@ function Home() {
         <FPa aRef={refs.fpa_ref} />
         <Home_canvas />
         <Home_welcome aRef={refs.for_viss} />
-        <Inter_home aref={refs} />
+        <Inter_home aref={refs}/>
         <Footer />
       </main>
   </Loading_scene>
