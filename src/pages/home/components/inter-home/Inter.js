@@ -6,8 +6,8 @@ import { Matter } from '../matter/Matter';
 import { Gravity_part } from '../gravity/Gravity';
 import { Int_h1 } from '../int-h1/Int';
 
-var txxxt =
-  'consectetur adipisicing elit, sed doi eiusmod tempor incididunt ut labore et dolore magna fef fe  Ut enim ad minim veniam.';
+const matter_txt = 'of the universe, is a hypothetical form of matter thought to account for approximately 85% of the matter in the universe ';
+const energy_txt = 'of the universe, an unknown form of energy that affects the universe on the largest scales '  ;
 var container , wid , s_wid , hei , svg , vg_he , vg_wid;
 
 const rando_m = (min , max) => {
@@ -110,8 +110,8 @@ function Inter_home(props) {
         </div>
       </div>
       <TheUniversalPart />
-      <Matter sec_title="more" title="dark energy" num="68% " txt={txxxt} />
-      <Matter sec_title="than" title="dark matter" num="27% " txt={txxxt} />
+      <Matter sec_title="more" title="dark energy" num="~68% " txt={energy_txt} />
+      <Matter sec_title="than" title="dark matter" num="~27% " txt={matter_txt} />
       <Matter sec_title="and the" title="matter we know" num="" txt="" />
       <div id="center-S">
         <div>

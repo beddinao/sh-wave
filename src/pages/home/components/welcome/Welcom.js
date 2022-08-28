@@ -17,14 +17,7 @@ const sty = {
   le_2: 'color',
   val_1: 'var(--background)',
 };
-const txt_1 = (
-  <p>
-    Lorem <span className="for-st">ipsum dolor sit amet</span>
-    ,consectetur adipisicing elit, sed doi eiusmod tempor incididunt ut labore
-    et dolore magna fef fe Ut enim ad minim veniam, quis nostrud exercitation
-    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  </p>
-);
+
 
 function Home_welcome(props) {
   const for_vi = useRef();
@@ -94,7 +87,11 @@ function Home_welcome(props) {
               BEYOND
             </h1>
           </div>
-          <div>{txt_1}</div>
+          <div>
+            <p>
+            The Boundless <span className="for-st">three-dimensional</span> extent in which objects and events have relative position and direction
+            </p>
+          </div>
         </div>
       </div>
       <div id="center-S">
@@ -116,9 +113,7 @@ function Home_welcome(props) {
           </div>
           <div>
             <p>
-              Lorem <span className="for-st">ipsum dolor </span>,consectetur ex
-              ea commodo consequat Duis aute irure dolor tin reprehenderit inf
-              voluptate velit esse cillum dolore eu
+            the Gravitationally Bound <span className='for-st'>System</span> of the Sun and the Objects that Orbit it
             </p>
           </div>
         </div>
@@ -142,9 +137,7 @@ function Home_welcome(props) {
           </div>
           <div>
             <p>
-              Lorem <span className="for-st">ipsum dolor sit amet</span>
-              ,consectetur adipisicing elit, sed doi eiusmod tempor incididunt
-              ut labore et.
+            The gravitationally <span className='for-st'>bound system</span> of stars, stellar remnants, interstellar gas, dust, and dark matter
             </p>
           </div>
         </div>

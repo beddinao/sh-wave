@@ -14,7 +14,7 @@ function TheUniversalCard() {
       </div>
       <div>
         <p id="uni-text">
-        consectetur adipisicing elit, sed doi eiusmod tempor incididunt dolore magna const txt_1  = consectetur adipisicing elit, sed doi eiusmod tempor incididunt dolore magna..  incididunt dolore magna const txt_1  = consectetur 
+        a spherical region of the<span style={{ fontWeight : 'bold' }} > entire universe</span> that can be observed from Earth. What this means is that you can’t see past the edge of the observable universe although we know it is much larger. It has nothing to do with our current technology and rather refers to the physical limit created by<span className='for-st' > the speed of light</span> itself
         </p>
       </div>
     </div>
@@ -26,8 +26,7 @@ export function TheUniversalPart() {
       <div id="center-S">
         <h1 className='arc_h1 for_cl'>a universe</h1>
         <p>
-          consectetur adipisicing elit, sed doi eiusmod tempor incididunt ut
-          labore et dolore magna fef fe Ut enim ad minim veniam.
+        all of space and time and their contents, including planets, stars, galaxies, and all other forms of matter and energy
         </p>
       </div>
       <div id="center-S"></div>

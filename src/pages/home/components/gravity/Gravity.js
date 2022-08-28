@@ -13,17 +13,14 @@ export function Gravity_part() {
             <h1 className='arc_h1'>
               That
               <br />
-              pulls/puts
+              pulls
               <br />
               everything
               <br />
               together
             </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut
+              a fundamental interaction which causes mutual attraction between all things with mass or energy. 
             </p>
           </div>
         </div>
