@@ -10,20 +10,22 @@
   z-index: 1;
 }
 .se-intro h1:nth-child(1) {
-  font-size: 50px;
+  font-size: 40px;
   align-self: flex-start;
   transform: translateY(50%);
 }
 .se-intro h1:nth-child(2) {
   -webkit-text-stroke: 1px var(--main-color);
   -moz-text-stroke: 1px var(--main-color);
-  font-size: 120px;
+  font-size: 100px;
   z-index: 4;
+  letter-spacing: .5vw;
 }
 .se-intro h1:nth-child(3) {
   z-index: 1;
   font-family: 'Long Cang', cursive;
   font-style: oblique;
   font-size: 100px;
-  transform: translateY(-75%);
+  transform: translateY(-50%);
+  letter-spacing: 1vw ;
 }

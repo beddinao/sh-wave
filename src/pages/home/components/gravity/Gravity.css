@@ -19,4 +19,5 @@
 .gravity-card p{
   padding :2vh 0vh ;
   width : 80% ;
+  color : var(--text)
 }

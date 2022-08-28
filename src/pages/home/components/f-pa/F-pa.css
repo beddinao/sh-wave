@@ -10,7 +10,6 @@
 /* */
 .f-Pa h1:nth-child(1) {
   font-size: 80px;
-  font-family: serif;
   letter-spacing: 3vw;
   z-index: 2;
   transform: translateX(3vw);
@@ -18,9 +17,9 @@
 .f-Pa h1:nth-child(2) {
   font-family: 'Long Cang', cursive;
   letter-spacing: 1vw;
-  font-size: 100px;
+  font-size: 90px;
   font-style: oblique;
-  transform: translateY(-75%) translateX(1vw);
+  transform: translateY(-50%) translateX(1vw);
   z-index: 1;
   color: var(--main-color);
 }

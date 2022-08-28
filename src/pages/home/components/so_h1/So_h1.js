@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React, { memo , useEffect , useState } from 'react';
 
 function Solar_h1(props) {
   return (

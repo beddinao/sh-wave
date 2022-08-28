@@ -2,6 +2,9 @@
   flex-direction : row ;
   align-items : flex-start ;
 }
+.intr h1{
+  font-family: 'Megrim' , cursive;
+}
 .intr > div {
   height : 60% ;
   width : 40% ;

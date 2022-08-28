@@ -5,6 +5,7 @@
 .universe-part p {
   text-align: center;
   transition-duration: 0.3s;
+  width : 25% ;
 }
 .theUniversalCard {
   height: 170vh;
@@ -22,5 +23,5 @@
   width: 100%;
 }
 #uni-text{
-  width : 40% ;
+  width : 80% ;
 }

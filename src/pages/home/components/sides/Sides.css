@@ -38,6 +38,7 @@
 }
 .side:nth-child(2) h1 {
   transform: rotate(90deg);
+  font-family : monospace ;
 }
 .side-container a:hover {
   background: var(--bg);

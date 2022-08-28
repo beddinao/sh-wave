@@ -43,6 +43,7 @@
 #ScenterS > div > div > div:nth-child(2) {
   height: auto;
   padding-bottom: 3vh;
+  grid-gap : 2em ;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -50,7 +51,7 @@
 #ScenterS > div > div > div:nth-child(2) > div {
   align-items: flex-start;
   width: 40%;
-  grid-gap: 2vh;
+  grid-gap: 1vh;
 }
 #ScenterS > div > div:nth-child(9) {
   justify-content: flex-start;

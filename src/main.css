@@ -98,3 +98,11 @@ main,
 .all_h1{
   font-family: 'Nico';
 }
+.megrim{
+  font-family: 'Megrim', cursive; 
+  letter-spacing: .2em;
+}
+.wire_one{
+  font-family: 'Wire One', sans-serif;
+  letter-spacing: .5em;
+}
