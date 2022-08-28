@@ -105,7 +105,7 @@ function Gal_img(props){
     $(elmnt).css('top', 'auto');
     setIs_loading(true) ;
     const loadData = async () => {
-      await new Promise((r) => setTimeout(r, 2500));
+      await new Promise((r) => setTimeout(r, 3000));
       setIs_loading(false);
     };
     loadData();
