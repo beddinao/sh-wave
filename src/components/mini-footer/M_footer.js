@@ -8,7 +8,7 @@ function Mfooter(){
       <div >
         <Up_btn />
       </div>
-      <p>some text</p>
+      <p></p>
     </div>
   )
 }
