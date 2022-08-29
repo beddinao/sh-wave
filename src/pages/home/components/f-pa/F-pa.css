@@ -19,7 +19,7 @@
   letter-spacing: 1vw;
   font-size: 90px;
   font-style: oblique;
-  transform: translateY(-50%) translateX(1vw);
+  transform: translateY(-65%) translateX(1vw);
   z-index: 1;
   color: var(--main-color);
 }
