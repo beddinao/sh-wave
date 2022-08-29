@@ -9,7 +9,7 @@
   transition-duration: 0.5s;
 }
 #nav .intro h1:nth-child(1) {
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 10px;
   transform: translateX(10px);
 }
