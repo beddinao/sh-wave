@@ -31,7 +31,7 @@ export function Nav_logo(props) {
     >
       <div className="logo">
         <Home_logo>
-          <h1 className='all_h1' >hello</h1>
+          <h1 className='all_h1' >sh-wave</h1>
         </Home_logo>
       </div>
       <Menu class="menu-btn" />
