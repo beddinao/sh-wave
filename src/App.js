@@ -35,6 +35,8 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route index path="/" element={<Home />} />
+        <Route path="solar-system" element={<SolarSystem />} />
+        <Route path="milky-way" element={<MilkyWay />} />
       </Routes>
     </BrowserRouter>
   );
