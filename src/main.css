@@ -14,9 +14,7 @@
   box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  scroll-snap-points-y: repeat(100%);
+  scroll-behavior: smooth ;
   scrollbar-width: 10px;
   scrollbar-color: var(--bg);
   transition-duration: 1s;
@@ -73,7 +71,6 @@ main,
   width: 100%;
 }
 #center-S {
-  scroll-snap-align: center;
   height: 100vh;
 }
 .for-st {
