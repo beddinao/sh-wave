@@ -9,7 +9,6 @@
   align-items: flex-end;
 }
 #ScenterS > div > div {
-  scroll-snap-align: center;
   height: 100vh;
   align-items: flex-start;
   width: 100%;
