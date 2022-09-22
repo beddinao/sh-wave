@@ -1,4 +1,5 @@
 import React, { memo, useEffect, useState } from 'react';
+import set_scroll_snap , { dis_fun } from '../../lib/scroll-snap' ;
 import './Load.css';
 
 export function Loading(props) {
@@ -35,6 +36,14 @@ function Loading_scene(props) {
     };
     loadData();
   }, []);
+  useEffect(() => {
+    if(!is_loading) {
+      set_scroll_snap( document.body.parentNode , document.querySelectorAll('#center-S') )
+    } ;
+    return () => {
+      dis_fun(document.body.parentNode)
+    }
+  })
   return (is_loading) ? <Loading ght='vh' /> : props.children
 }
 

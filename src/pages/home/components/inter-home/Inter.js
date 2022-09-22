@@ -22,7 +22,7 @@ function draw_() {
   vg_he = parseFloat(getComputedStyle(svg).height) - 10;
   vg_wid = get_width('#_svg' , 10) ;
   wid = get_width('#stars_cont',0) ;
-  s_wid = get_width('#s_width',25);
+  s_wid = get_width('#s_width',100);
   hei = parseFloat(getComputedStyle(container).height);
 
   draw_in();
