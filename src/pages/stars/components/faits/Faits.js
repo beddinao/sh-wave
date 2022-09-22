@@ -5,11 +5,11 @@ function Faits(){
   return(
     <div id="ScenterS">
         <div>
-          <div>
+          <div id='center-S' >
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
           </div>
 
-          <div>
+          <div id='center-S' >
             <div>
               <h1 className='wire_one' >something</h1>
             </div>
@@ -25,15 +25,15 @@ function Faits(){
             </div>
           </div>
 
-          <div>
+          <div id='center-S' >
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
           </div>
 
-          <div>
+          <div id='center-S' >
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
           </div>
 
-          <div>
+          <div id='center-S' >
             <div>
               <h1 className='wire_one'>something</h1>
               
@@ -50,11 +50,11 @@ function Faits(){
             </div>
           </div>
 
-          <div>
+          <div id='center-S' >
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
           </div>
 
-          <div>
+          <div id='center-S' >
             <div>
               <h1 className='wire_one'>something</h1>
               
@@ -71,12 +71,12 @@ function Faits(){
             </div>
           </div>
 
-          <div>
+          <div id='center-S' >
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
           </div>
 
 
-          <div>
+          <div id='center-S' >
             <div>
               <div>
                 <h1 className='wire_one'>black holes</h1>
@@ -84,9 +84,9 @@ function Faits(){
             </div>
           </div>
 
-          <div></div>
+          <div id='center-S' ></div>
 
-          <div>
+          <div id='center-S' >
             <div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
             </div>
