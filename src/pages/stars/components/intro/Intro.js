@@ -45,4 +45,4 @@ function Intro(){
 }
 
 
-export default memo(Intro);
+export default memo(Intro)
