@@ -53,10 +53,33 @@ h1 {
   font-weight: lighter;
   text-transform: uppercase;
 }
+
+@font-face{
+  font-family:'Montserrat';
+  src:url('./lib/MontserratAlternates-Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family:'Wire One';
+  src:url('./lib/WireOne-Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family:'Long Cang';
+  src:url('./lib/LongCang-Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family:'Megrim';
+  src:url('./lib/Megrim-Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family:'Nico';
+  src:url('./lib/NicoMoji-Regular.ttf') format('truetype');
+}
+
+
 p {
   font-size: 15px;
   color: var(--txt);
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Montserrat' ;
   max-width : 35vw ;
 }
 a,
@@ -82,24 +105,20 @@ main,
 }
 .arc_h1{
   font-size : 90px ;
-  font-family: 'Megrim', cursive;
+  font-family: 'Megrim';
 }
 .arc_h2{
-  font-family: 'Wire One', sans-serif;
+  font-family: 'Wire One';
   letter-spacing: .3em;
-}
-@font-face{
-  font-family:'Nico';
-  src:url('./lib/NicoMoji-Regular.ttf') format('truetype');
 }
 .all_h1{
   font-family: 'Nico';
 }
 .megrim{
-  font-family: 'Megrim', cursive; 
+  font-family: 'Megrim'; 
   letter-spacing: .2em;
 }
 .wire_one{
-  font-family: 'Wire One', sans-serif;
+  font-family: 'Wire One';
   letter-spacing: .5em;
 }
