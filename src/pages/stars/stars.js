@@ -5,6 +5,7 @@ import Wrapper from './components/img_wrapper/Wrapper';
 import Intro from './components/intro/Intro';
 import Svg from './components/faits_svg/Svg';
 import { Menu } from '../../components/menu_btn/Menu_btn';
+import Mfooter from '../../components/mini-footer/M_footer' ;
 
 const con_f_n_s = {
   position: 'fixed',
@@ -24,10 +25,11 @@ function Stars() {
         <Intro />
         <Wrapper />
         <div id="center-S">
-          <h1 id="fpP">to the bottom</h1>
+          <h1 id="fpP" className='arc_h1' >Stars Faits</h1>
         </div>
         <Faits />
         <Svg />
+        <Mfooter />
       </main>
     </Loading_scene>
   );
