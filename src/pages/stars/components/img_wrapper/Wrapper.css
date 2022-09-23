@@ -12,4 +12,7 @@
   top : 0% ;
   height : 60vh ;
   border-bottom : 1px solid var(--main-color);
+  background : url('../images/stars.jpg') ;
+  background-size : cover ;
+  background-position : center
 }
