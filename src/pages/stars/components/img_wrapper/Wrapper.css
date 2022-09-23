@@ -5,16 +5,15 @@
   height : 160vh ;
   width : 35vw ;
   justify-content: flex-start ;
-  z-index: -1;
+  z-index: -1 ;
 }
-.img_wrapper div{
+.img_wrapper > div{
   position : sticky ;
   top : 0% ;
   height : 60vh ;
   width : 35vw ;
-  max-width : 35vw ;
   border-bottom : 1px solid var(--main-color);
-  background : url('../images/stars.jpg') ;
+  background-image : url('../images/stars.jpg') ;
   background-size : cover ;
   background-position : center
 }
