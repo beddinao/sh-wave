@@ -38,8 +38,6 @@
   justify-content: flex-start;
   padding-top: 3vw;
   grid-gap: 2vh;
-  background-size: cover ;
-  background-position: center ;
 }
 #ScenterS > div > div > div:nth-child(2) {
   height: auto;
@@ -74,17 +72,22 @@
 
 /* background images */
 #ScenterS > div > div:nth-child(2) > div:nth-child(1){
-  background : url('../images/white_dwarf.jpg')
+  background-image : url('../images/white_dwarf.jpg')
 }
 #ScenterS > div > div:nth-child(5) > div:nth-child(1){
-  background : url('../images/supernovae.jpg')
+  background-image : url('../images/supernovae.jpg')
 }
 #ScenterS > div > div:nth-child(7) > div:nth-child(1){
-  background : url('../images/neutron_star.jpg')
+  background-image : url('../images/neutron_star.jpg')
 }
 #ScenterS > div > div:nth-child(9) > div > div:nth-child(1){
-  background : url('../images/black_hole.jpg')
+  background-image : url('../images/black_hole.jpg')
 }
 #ScenterS > div > div:nth-child(11) > div {
-  background : url('../images/cycle.jpg')
+  background-image : url('../images/cycle.jpg')
 } ;
+#ScenterS > div > div > div ,
+#ScenterS > div > div > div > div {
+  background-size: cover ;
+  background-position: center ;
+}
