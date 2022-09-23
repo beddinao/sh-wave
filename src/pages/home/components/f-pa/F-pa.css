@@ -15,7 +15,7 @@
   transform: translateX(3vw);
 }
 .f-Pa h1:nth-child(2) {
-  font-family: 'Long Cang', cursive;
+  font-family: 'Long Cang';
   letter-spacing: 1vw;
   font-size: 90px;
   font-style: oblique;
