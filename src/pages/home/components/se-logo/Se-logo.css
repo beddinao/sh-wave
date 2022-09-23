@@ -23,7 +23,7 @@
 }
 .se-intro h1:nth-child(3) {
   z-index: 1;
-  font-family: 'Long Cang', cursive;
+  font-family: 'Long Cang';
   font-style: oblique;
   font-size: 100px;
   transform: translateY(-55%);
