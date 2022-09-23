@@ -94,4 +94,4 @@ If the star is sufficiently massive, the collapsing core may become hot enough t
 }
 
 
-export default memo(Faits);
+export default memo(Faits)
