@@ -39,6 +39,9 @@ function Home() {
     se_logo_ref: useRef(),
     fpa_ref: useRef(),
   };
+  useEffect(()=> {
+    document.title = " Sh-Wave" ;
+  })
   return(
     <Loading_scene tm={2300} >
       <main>
