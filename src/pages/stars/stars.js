@@ -14,10 +14,11 @@ const con_f_n_s = {
   alignItems: 'flex-end',
   padding: '0% 5%',
 };
-useEffect(()=> {
-  document.title = " / stars" ;
-})
+
 function Stars() {
+  useEffect(()=> {
+    document.title = " / stars" ;
+  })
   return (
     <Loading_scene tm={3000}>
       <main>
