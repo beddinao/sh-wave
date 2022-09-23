@@ -14,7 +14,9 @@ const con_f_n_s = {
   alignItems: 'flex-end',
   padding: '0% 5%',
 };
-
+useEffect(()=> {
+  document.title = " / stars" ;
+})
 function Stars() {
   return (
     <Loading_scene tm={3000}>
