@@ -17,7 +17,7 @@ const con_f_n_s = {
 
 function Stars() {
   useEffect(()=> {
-    document.title = " / stars" ;
+    document.title = '  / Stars' ;
   })
   return (
     <Loading_scene tm={3000}>
