@@ -24,7 +24,7 @@
 }
 #ScenterS > div > div > div,
 #ScenterS > div > div > p {
-  background: var(--background);
+  background-color : var(--background);
 }
 #ScenterS > div > div > div,
 #ScenterS > div > div:nth-child(9) > div > div {
@@ -70,32 +70,33 @@
 }
 
 /* background images */
+
 #ScenterS > div > div:nth-child(2) > div:nth-child(1){
   background-image : url('../images/white_dwarf.jpg')
 }
-#ScenterS > div > div:nth-child(5) > div:nth-child(1){
-  background-image : url('../images/supernovae.jpg')
-}
 #ScenterS > div > div:nth-child(7) > div:nth-child(1){
-  background-image : url('../images/neutron_star.jpg')
-}
-#ScenterS > div > div:nth-child(9) > div > div:nth-child(1){
-  background-image : url('../images/black_hole.jpg')
-}
-#ScenterS > div > div:nth-child(11) > div {
-  background-image : url('../images/cycle.jpg')
-} ;
-#ScenterS > div > div:nth-child(2) > div:nth-child(1) ,
-#ScenterS > div > div:nth-child(5) > div:nth-child(1) ,
-#ScenterS > div > div:nth-child(7) > div:nth-child(1) ,
-#ScenterS > div > div:nth-child(9) > div > div:nth-child(1) ,
-#ScenterS > div > div:nth-child(11) > div {
+  background-image : url('../images/neutron_star.jpg') ;
   background-size: cover ;
   background-position: center ;
 }
+#ScenterS > div > div:nth-child(9) > div > div:nth-child(1){
+  background-image : url('../images/black_hole.jpg') ;
+  background-size: cover ;
+  background-position: center ;
+}
+#ScenterS > div > div:nth-child(11) > div {
+  background-image : url('../images/cycle.jpg') ;
+  background-size: cover ;
+  background-position: center ;
+} ;
 #ScenterS > div > div:nth-child(5) > div:nth-child(1){
-  background-size : 100% 110% ;
+  background-image : url('../images/supernovae.jpg') ;
+  background-size : auto 100% ;
+  background-position : center right ;
+  background-repeat : no-repeat ;
 }
 #ScenterS > div > div:nth-child(11) > div {
   border: 1px solid var(--main-color);
 }
+
+/* ... */
