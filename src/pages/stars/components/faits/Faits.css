@@ -74,6 +74,12 @@
 #ScenterS > div > div:nth-child(2) > div:nth-child(1){
   background-image : url('../images/white_dwarf.jpg')
 }
+#ScenterS > div > div:nth-child(5) > div:nth-child(1){
+  background-image : url('../images/supernovae.jpg') ;
+  background-size : 100% auto ;
+  background-position : center right ;
+  background-repeat : no-repeat ;
+}
 #ScenterS > div > div:nth-child(7) > div:nth-child(1){
   background-image : url('../images/neutron_star.jpg') ;
   background-size: cover ;
@@ -89,12 +95,7 @@
   background-size: cover ;
   background-position: center ;
 } ;
-#ScenterS > div > div:nth-child(5) > div:nth-child(1){
-  background-image : url('../images/supernovae.jpg') ;
-  background-size : 100% auto ;
-  background-position : center right ;
-  background-repeat : no-repeat ;
-}
+
 #ScenterS > div > div:nth-child(11) > div {
   border: 1px solid var(--main-color);
 }
