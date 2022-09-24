@@ -91,7 +91,7 @@
 } ;
 #ScenterS > div > div:nth-child(5) > div:nth-child(1){
   background-image : url('../images/supernovae.jpg') ;
-  background-size : auto 100% ;
+  background-size : 100% auto ;
   background-position : center right ;
   background-repeat : no-repeat ;
 }
