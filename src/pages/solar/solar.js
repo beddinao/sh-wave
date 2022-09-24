@@ -16,7 +16,7 @@ const galaxy_been = 'began as one or several small overdensities in the mass dis
 export function MilkyWay() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = " / milky way" ;
+    document.title = "  / Milky-Way" ;
   }, []);
   return (
     <Loading_scene tm={2000}>
@@ -34,7 +34,7 @@ export function MilkyWay() {
 export function SolarSystem() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = " / solar system" ;
+    document.title = "  / Solar-System" ;
   }, []);
   return (
     <Loading_scene tm={2000}>
