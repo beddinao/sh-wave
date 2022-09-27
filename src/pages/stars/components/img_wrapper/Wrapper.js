@@ -1,10 +1,29 @@
 import React , {memo} from 'react' ;
-import './Wrapper.css' ;
+import img_g from '../images/stars.jpg' ;
+
+var img_wr_a = {
+  position: 'absolute' ,
+  top : '100vh' ,
+  left : '10vw' ,
+  height : '160vh' ,
+  width : '35vw' ,
+  justifyContent: 'flex-start' ,
+} ;
+var img_wr_b = {
+    position : 'sticky' ,
+    top : '0%' ,
+    height : '60vh' ,
+    width : '35vw' ,
+    borderBottom : '1px solid var(--main-color)',
+    backgroundImage : img_g ,
+    backgroundSize : 'cover' ,
+    backgroundPosition : 'center'
+}
 
 function Wrapper(){
   return(
-    <div className="img_wr_a_pper" style={{ position : "absolute" , top : "100vh" }} >
-      <div></div>
+    <div style={ img_wr_a } >
+      <div style={ img_wr_b } ></div>
     </div>
   )
 }
