@@ -1,23 +1,23 @@
-.intr {
+.int_r_ {
   flex-direction : row ;
   align-items : flex-start ;
 }
-.intr h1{
+.int_r_ h1{
   font-family: 'Megrim' ;
 }
-.intr > div {
+.int_r_ > div {
   height : 60% ;
   width : 40% ;
   justify-content : flex-end ;
   align-items : flex-start ;
   grid-gap : 5vh
 }
-.intr > div > div {
+.int_r_ > div > div {
   width : 80% ;
   grid-gap: 2vh ;
   align-items : flex-start ;
   justify-content : flex-start ;
 }
-.intr:nth-child(3) > div { height : 85% }
-.intr > div:nth-child(2) { padding-left: 5vw }
-.intr > div > div:nth-child(2) { height : 20vh }
+.int_r_:nth-child(3) > div { height : 85% }
+.int_r_ > div:nth-child(2) { padding-left: 5vw }
+.int_r_ > div > div:nth-child(2) { height : 20vh }
