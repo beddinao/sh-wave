@@ -3,7 +3,7 @@ import './Wrapper.css' ;
 
 function Wrapper(){
   return(
-    <div className="img_wrapper">
+    <div className="img_wr_a_pper">
       <div></div>
     </div>
   )
