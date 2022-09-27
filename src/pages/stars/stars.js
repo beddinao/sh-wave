@@ -1,7 +1,6 @@
 import React, { memo , useEffect } from 'react';
 import Loading_scene from '../../components/loading/Load';
 import Faits from './components/faits/Faits';
-import Wrapper from './components/img_wrapper/Wrapper';
 import Intro from './components/intro/Intro';
 import Svg from './components/faits_svg/Svg';
 import { Menu } from '../../components/menu_btn/Menu_btn';
