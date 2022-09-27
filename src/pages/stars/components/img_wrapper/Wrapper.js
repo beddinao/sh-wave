@@ -3,7 +3,7 @@ import './Wrapper.css' ;
 
 function Wrapper(){
   return(
-    <div className="img_wr_a_pper">
+    <div className="img_wr_a_pper" style={{ position : "absolute" , top : "100vh" }} >
       <div></div>
     </div>
   )
