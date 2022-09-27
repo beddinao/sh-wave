@@ -15,6 +15,14 @@ const con_f_n_s = {
   padding: '0% 5%',
 };
 
+function F_p_P (){
+  return (
+    <div id='center-S' >
+      <h1 id='fpP' className='arc_h1' >Stars Faits</h1>
+    </div>
+    )
+}
+
 function Stars() {
   useEffect(()=> {
     document.title = '  / Stars' ;
@@ -27,9 +35,7 @@ function Stars() {
         </div>
         <Intro />
         <Wrapper />
-        <div id="center-S">
-          <h1 id="fpP" className='arc_h1' >Stars Faits</h1>
-        </div>
+        <F_p_P />
         <Faits />
         <Svg />
         <Mfooter />
