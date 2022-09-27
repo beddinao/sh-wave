@@ -6,7 +6,25 @@ import Intro from './components/intro/Intro';
 import Svg from './components/faits_svg/Svg';
 import { Menu } from '../../components/menu_btn/Menu_btn';
 import Mfooter from '../../components/mini-footer/M_footer' ;
-
+import img_g from './components/images/stars.jpg' ;
+const img_wr_b = {
+  position : 'sticky' ,
+  top : '0%' ,
+  height : '60vh' ,
+  width : '35vw' ,
+  borderBottom : '1px solid var(--main-color)',
+  backgroundImage : img_g ,
+  backgroundSize : 'cover' ,
+  backgroundPosition : 'center'
+};
+const img_wr_a = {
+  position: 'absolute' ,
+  top : '100vh' ,
+  left : '10vw' ,
+  height : '160vh' ,
+  width : '35vw' ,
+  justifyContent: 'flex-start' ,
+};
 const con_f_n_s = {
   position: 'fixed',
   top: '0%',
@@ -15,6 +33,13 @@ const con_f_n_s = {
   padding: '0% 5%',
 };
 
+function Wrapper(){
+  return(
+    <div style={ img_wr_a } >
+      <div style={ img_wr_b } ></div>
+    </div>
+  )
+}
 function F_p_P (){
   return (
     <div id='center-S' >
