@@ -1,4 +1,4 @@
-.img_wrapper{
+.img_wr_a_pper{
   position: absolute ;
   top : 100vh ;
   left : 10vw ;
@@ -6,7 +6,7 @@
   width : 35vw ;
   justify-content: flex-start ;
 }
-.img_wrapper > div{
+.img_wr_a_pper > div{
   position : sticky ;
   top : 0% ;
   height : 60vh ;
