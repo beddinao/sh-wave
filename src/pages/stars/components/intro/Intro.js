@@ -4,7 +4,7 @@ import './Intro.css' ;
 function Intro(){
   return(
     <div>
-      <div className="intr" id='center-S'>
+      <div id='center-S' className="int_r_">
           <div>  </div>
           <div>
             <div>
@@ -12,7 +12,7 @@ function Intro(){
             </div>
           </div>
         </div>
-        <div className="intr" id='center-S'>
+        <div id='center-S' className="int_r_">
           <div></div>
           <div>
             <div>
@@ -21,7 +21,7 @@ function Intro(){
             </div>
           </div>
         </div>
-        <div className="intr" id='center-S'>
+        <div  id='center-S' className="int_r_">
           <div>
             <div></div>
             <div>
