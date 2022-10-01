@@ -1,7 +1,19 @@
 import React, { memo, useEffect } from 'react';
-import './Svg.css';
 
 var sW, sH, hpP, sv_g;
+
+const svg_con = {
+  position: "absolute",
+  height: "1100vh",
+  top: '350vh',
+  width:'30vw',
+  left: '20vw',
+  zIndex: '-1',
+}
+const s_vg_s = {
+  height : "100%" ,
+  width : "100%" ,
+}
 
 function draw_svg() {
   sv_g = document.getElementById('svg_2');
@@ -36,6 +48,8 @@ function draw_in() {
     'http://www.w3.org/2000/svg',
     'path'
   );
+  $(path_html_element).css('stroke','var(--main-color)') ;
+  $(path_html_element).css('stroke-width','1') ;
   path_html_element.setAttributeNS(null, 'd', path_d_value);
   sv_g.appendChild(path_html_element);
 
@@ -50,11 +64,12 @@ function Svg() {
     };
   }, []);
   return (
-    <div className="svg_container">
+    <div className="svg_container" style={svg_con} >
       <svg
         id="svg_2"
         viewBox="0 0 30vw 1100vh"
         xmlns="http://www.w3.org/2000/svg"
+        style={s_vg_s}
       ></svg>
     </div>
   );
