@@ -15,7 +15,6 @@ var img_wr_b = {
     height : '60vh' ,
     width : '35vw' ,
     borderBottom : '1px solid var(--main-color)',
-    backgroundImage : img_g ,
     backgroundSize : 'cover' ,
     backgroundPosition : 'center'
 }
@@ -23,7 +22,7 @@ var img_wr_b = {
 function Wrapper(){
   return(
     <div style={ img_wr_a } >
-      <div style={ img_wr_b } ></div>
+      <div style={ Object.assing(img_wr_b , {backgroundImage : img_g} )  } ></div>
     </div>
   )
 }
