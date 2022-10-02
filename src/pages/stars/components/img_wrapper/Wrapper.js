@@ -22,7 +22,7 @@ var img_wr_b = {
 function Wrapper(){
   return(
     <div style={ img_wr_a } >
-      <div style={ Object.assing(img_wr_b , {backgroundImage : img_g} )  } ></div>
+      <div style={ Object.assign(img_wr_b , {backgroundImage : img_g} )  } ></div>
     </div>
   )
 }
