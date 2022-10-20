@@ -23,8 +23,8 @@ export function MilkyWay() {
       <main>
         <S_nav name="milky way" isHid="isHid" img={ring_2} />
         <Milky_way_img />
-        <Center_3 txt={solar_is} />
-        <Center_3 txt={solar_been} />
+        <Center_3 txt={galaxy_is} />
+        <Center_3 txt={galaxy_been} />
         <Mfooter />
       </main>
     </Loading_scene>
@@ -41,8 +41,8 @@ export function SolarSystem() {
       <main>
         <S_nav name="solar system" isHid="notHid" img={ring_1} />
         <Solar_canvas />
-        <Center_3 txt={galaxy_is} />
-        <Center_3 txt={galaxy_been} />
+        <Center_3 txt={solar_is} />
+        <Center_3 txt={solar_been} />
         <Mfooter />
       </main>
     </Loading_scene>
