@@ -20,26 +20,27 @@
 .footer-container > div > div:nth-child(2){
   height : 100% ;
   align-items: flex-end ;
-  flex-direction: column ;
+  flex-direction: column
 }
 .footer-container > div > div:nth-child(2) > div{
   height : 50% ;
-  width : 70% ;
+  width : 70% 
 }
 .footer-container > div > div:nth-child(2) > div:nth-child(1){
   height : 60% ;
   transition-duration: .3s ;
   background-image: url(./g_simulation_1.png);
   background-size : cover ;
-  background-position : center ;
-  border : none
+  background-position : center
 }
 .footer-container > div > div:nth-child(2) > div:nth-child(1):hover {
   cursor : pointer ;
   border-bottom : 1px solid var(--main-color) ;
+  filter : contrast(96%) ;
 }
 .footer-container > div > div:nth-child(2) > div:nth-child(1) h1{
-  transform: translateX(-150%);
+  transform: translateX(-100%);
+  color : var(--txt)
 }
 .footer-container > div > div:nth-child(2) > div:nth-child(2){
   align-items: flex-end ;
