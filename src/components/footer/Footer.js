@@ -18,8 +18,10 @@ export function Footer() {
           </h1>
         </div>
         <div>
-          <div onClick={window.open( 'https://g-simulation.netlify.app' , '_blank' )} >
-            <h1>g. simulation</h1>
+          <div>
+            <a href='https://g-simulation.netlify.app' target='_blank' >
+              <h1>g. simulation</h1>
+            </a>
           </div>
           <div>
             <Up_btn />
